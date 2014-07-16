@@ -1,0 +1,11 @@
+#set autoindent
+unset casesensitive
+set historylog
+unset  mouse
+set smooth
+set smarthome
+set tabsize "2"
+set tabstospaces
+set tempfile
+set const
+set nowrap
