@@ -18,3 +18,12 @@ do
     source $f
   fi
 done
+
+# OS specific source
+if [ -f "$HOME/.darwin_exports" ]; then
+  source "$HOME/.darwin_exports"
+fi
+
+if [ -f "$HOME/.linux_exports" ]; then
+  source "$HOME/.linux_exports"
+fi
