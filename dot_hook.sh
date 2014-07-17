@@ -1,14 +1,9 @@
 #!/bin/sh
 
-if [ -f "$HOME/.dot13" ]; then
-  source "$HOME/.dot13"
+if [ -f "$HOME/.dot13_environment" ]; then
+  source "$HOME/.dot13_environment"
 else
-  echo '.dot13 - Environment / Kernel files missing'
-fi
-
-# Contains PATH values
-if [ -f "$HOME/.dot_path" ]; then
-  source "$HOME/.dot_path"
+  echo '.dot13_environment - Environment / Kernel exports missing'
 fi
 
 # Centalized sourcefiles

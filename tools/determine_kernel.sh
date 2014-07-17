@@ -3,4 +3,4 @@
 env=$(uname -s | tr '[:upper:]' '[:lower:]')
 
 # Determine kernel: darwin / linux
-echo "export DOT_KERNEL='$env'" >> ~/.dot13
+echo "export DOT_KERNEL='$env'" >> ~/.dot13_environment
