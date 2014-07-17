@@ -94,4 +94,4 @@ default = current
   trustExitCode = true
 
 [include]
-  path = ~/.gitconfig.work
+  path = ~/.gitconfig-work
