@@ -8,8 +8,13 @@ DOT="$HOME/dot13"
 # Linking
 ##############################################
 
-# RC files
-ln -sf "$DOT/dot/.*" "$HOME"
+# Dot files
+for f in $HOME/dot13/dot/.*
+do
+  if [ -f $f ]; then
+    ln -sf $f $HOME
+  fi
+done
 
 # Git config
 ln -sf "$DOT/git/.gitattributes" "$HOME"
