@@ -9,7 +9,7 @@ DOT="$HOME/dot13"
 ##############################################
 
 # Dot files
-for f in $HOME/dot13/dot/.*
+for f in $HOME/dot13/dotfiles/.*
 do
   if [ -f $f ]; then
     ln -sf $f $HOME
