@@ -1,4 +1,7 @@
 " Golang
+
+silent !mkdir -p ~/.golang > /dev/null 2>&1
+
 let g:go_snippet_engine = "neosnippet"
 let g:go_bin_path = expand("~/golang")
 

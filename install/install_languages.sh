@@ -7,6 +7,3 @@ if ! type -p ruby > /dev/null; then
   bash ./install_ruby.sh
   bash ./install_gems.sh
 fi
-
-# Go lang
-mkdir -p "$HOME/golang" # vim-go plugin handles rest
