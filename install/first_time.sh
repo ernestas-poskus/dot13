@@ -2,27 +2,24 @@
 
 echo "First time installation"
 
-DOT_PATH="$HOME/dot13/install"
-
-
 # Programming Languages
-bash "$DOT_PATH/install_languages.sh"
+bash "$DOT_PATH_INSTALL/install_languages.sh"
 
 # Mac OS
 if [ "$DOT_KERNEL" == 'darwin' ]; then
-  bash "$DOT_PATH/install_darwin.sh"
+  bash "$DOT_PATH_INSTALL/install_darwin.sh"
 fi
 
 # Linux <3
 if [ "$DOT_KERNEL" == 'linux' ]; then
-  bash "$DOT_PATH/install_linux.sh"
+  bash "$DOT_PATH_INSTALL/install_linux.sh"
 fi
 
 # Zsh/.oh-my-zsh
-bash "$DOT_PATH/install_zsh.sh"
+bash "$DOT_PATH_INSTALL/install_zsh.sh"
 
 # Vim
-bash "$DOT_PATH/install_vim.sh"
+bash "$DOT_PATH_INSTALL/install_vim.sh"
 
 # Install/Upgrade
-bash "$DOT_PATH/upgrade.sh"
+bash "$DOT_PATH_INSTALL/upgrade.sh"
