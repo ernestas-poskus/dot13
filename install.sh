@@ -6,7 +6,8 @@ if [ ! -d "$HOME/dot13" ]; then
     cd "$HOME/dot13"
     bash "$HOME/dot13/tools/determine_kernel.sh"
     bash "$HOME/dot13/tools/determine_environment.sh"
-    source "$HOME/.dot13"
+    bash "$HOME/dot13/tools/determine_path.sh"
+    source "$HOME/.dot13_environment"
     echo "Proceeding.. "
     bash "$HOME/dot13/install/first_time.sh"
 else
