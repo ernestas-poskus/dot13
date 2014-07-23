@@ -21,4 +21,4 @@ ln -sf "$DOT/vim/vimrc" "$HOME/.vimrc"
 ln -sf "$DOT/zsh/.zshrc" "$HOME"
 
 # Linking sourcer hook
-ln -sf "$DOT/dot_hook.sh" "$HOME"
+ln -sf "$DOT/dot_hook.zsh" "$HOME"
