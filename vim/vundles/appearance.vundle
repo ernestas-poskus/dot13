@@ -5,3 +5,4 @@ Bundle "jby/tmux.vim.git"
 Bundle "morhetz/gruvbox"
 Bundle "xsunsmile/showmarks.git"
 Bundle 'bling/vim-airline'
+Bundle 'godlygeek/csapprox'
