@@ -31,8 +31,8 @@
 [core]
   whitespace = fix,space-before-tab,indent-with-non-tab,trailing-space,cr-at-eol
   editor = nano
-  excludesfile = ~/dot13/git/.gitignore
-  attributesfile = ~/dot13/git/.gitattributes
+  excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
   autocrlf = input
 
 [alias]
