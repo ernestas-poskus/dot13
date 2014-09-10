@@ -35,8 +35,8 @@ let g:ctrlp_prompt_mappings = {
 "nnoremap <silent> ,t :CtrlP<CR>
 nnoremap <Leader>o :CtrlP<CR>
 
-" Additional mapping for buffer search
-nnoremap <Leader>b :CtrlPBuffer<CR>
+" Additional mapping for ctags search
+nnoremap <Leader>b :CtrlPTag<CR>
 
 " Search for modified
 nnoremap <Leader>m :CtrlPModified<CR>
