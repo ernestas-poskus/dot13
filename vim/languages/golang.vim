@@ -1,4 +1,6 @@
-" Golang
+autocmd FileType go setlocal tabstop=4 softtabstop=4 shiftwidth=4
+autocmd FileType go set listchars=tab:▸\ ,
+autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow
 
 silent !mkdir -p ~/.golang > /dev/null 2>&1
 
@@ -16,3 +18,5 @@ au FileType go nmap gd <Plug>(go-def)
 au FileType go nmap <Leader>ds <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+
+set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
