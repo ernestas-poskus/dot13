@@ -1,4 +1,4 @@
-
 # Golang
 export GOPATH=$HOME/golang
+export GOBIN=$HOME/golang/bin
 export PATH=$PATH:$GOPATH/bin
