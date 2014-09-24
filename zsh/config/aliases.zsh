@@ -18,6 +18,7 @@ alias v='vim'
 alias n='node --max-old-space-size=4000'
 alias z='zsh'
 alias p="cd ~/Documents/projects"
+alias red='redis-cli'
 
 # Shortcuts
 alias dropbox="cd ~/Dropbox"
