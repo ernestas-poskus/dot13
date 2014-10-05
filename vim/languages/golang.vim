@@ -5,7 +5,7 @@ autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow " GoLint afte
 silent !mkdir -p ~/.golang > /dev/null 2>&1
 
 let g:go_snippet_engine = "neosnippet"
-let g:go_bin_path = expand("~/golang")
+let g:go_bin_path = expand($GOPATH)
 set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
 
 " Keyconfig
