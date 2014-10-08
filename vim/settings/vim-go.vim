@@ -23,7 +23,7 @@ let g:go_bin_path = expand($GOPATH)
 
 " Use this option to define the default snippet engine.  By default
 " "ultisnips" is used. Use "neosnippet" for neosnippet.vim: >
-let g:go_snippet_engine = "neosnippet"
+let g:go_snippet_engine = "ultisnips"
 
 
 " Syntax Settings
