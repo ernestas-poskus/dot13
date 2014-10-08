@@ -97,7 +97,7 @@ filetype indent on
 
 " Display tabs and trailing spaces visually
 set list
-set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+set listchars=tab:▷⋅,trail:¤,nbsp:⋅,extends:>,precedes:<
 
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
