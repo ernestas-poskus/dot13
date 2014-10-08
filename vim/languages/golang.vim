@@ -1,12 +1,10 @@
+" FileType
 autocmd FileType go setlocal tabstop=4 softtabstop=4 shiftwidth=4
-autocmd FileType go set listchars=tab:▸\ ,
-autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow " GoLint after save
+autocmd FileType go set nolist
 
-silent !mkdir -p ~/.golang > /dev/null 2>&1
-
-let g:go_snippet_engine = "neosnippet"
-let g:go_bin_path = expand($GOPATH)
+" Hooks
 set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
+autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow " GoLint after save
 
 " Keyconfig
 au FileType go nmap <Leader>i <Plug>(go-info)
@@ -22,5 +20,3 @@ au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 au FileType go inoremap ' "
 au FileType go inoremap " '
-
-
