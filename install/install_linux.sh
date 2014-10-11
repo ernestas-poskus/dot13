@@ -8,3 +8,6 @@ sudo apt-get install silversearcher-ag
 
 # Tmux
 sudo apt-get install tmux
+
+# ctags
+sudo apt-get install exuberant-ctags
