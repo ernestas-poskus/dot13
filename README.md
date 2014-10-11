@@ -10,35 +10,31 @@ sh -c "`curl -fsSL https://raw.githubusercontent.com/ernestas-poskus/dot13/maste
 ----------
 #### Linux Vim + Lua Installation
 
-##### Install lua from binaries (these are out-of-date but at least they worked).
-
-    sudo apt-get install lua50 liblua50-dev liblualib50-dev
-##### Remove old vims
-    sudo apt-get remove vim vim-runtime gvim
-    sudo apt-get remove vim-tiny vim-common vim-gui-common
-##### Download and build a new vim
-    sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev \
-    libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
-    libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev mercurial
-    cd ~
-    hg clone https://code.google.com/p/vim/
-    cd vim
-    cd ~/vim
-    ./configure --with-features=huge \
-                  --enable-rubyinterp \
-                  --enable-pythoninterp \
-                  --with-python-config-dir=/usr/lib/python2.7-config \
-                  --enable-perlinterp \
-                  --enable-gui=gtk2 --enable-cscope --prefix=/usr \
-                  --enable-luainterp \
-                  --with-lua-prefix=$(which lua)
 ```
-At this point, check the output of ./configure to see that it found lua.h.
-If not, find out where it is symlink to it in /usr/local with
-e.g. sudo ln -s ../lua.h and rerun ./configure
+sudo apt-get install liblua5.1-dev vim-nox
+sudo mkdir /usr/include/lua5.1/include/
+sudo cp /usr/include/lua5.1/* /usr/include/lua5.1/include/
+sudo ln -s /usr/lib/x86_64-linux-gnu/liblua5.1.so /usr/local/lib/liblua.so
+hg clone https://code.google.com/p/vim/
+cd vim
+./configure --with-features=huge \
+	--enable-perlinterp \
+	--enable-rubyinterp \
+	--enable-pythoninterp=yes \
+	--with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu \
+	--enable-multibyte \
+	--enable-fontset \
+	--enable-gui=gtk2 \
+	--disable-netbeans \
+	--enable-luainterp=yes \
+	--with-lua-prefix=/usr/include/lua5.1 \
+	--enable-cscope \
+	--enable-largefile \
+	--prefix=/usr
+make VIMRUNTIMEDIR=/usr/share/vim/vim74
+sudo checkinstall
+make isntall
 ```
-##### Finally run
-    sudo make VIMRUNTIMEDIR=/usr/share/vim/vim74sudo make install
 
 ----------
 
