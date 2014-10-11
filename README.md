@@ -7,7 +7,6 @@ Vim-files, dotfiles &amp; zsh
 sh -c "`curl -fsSL https://raw.githubusercontent.com/ernestas-poskus/dot13/master/install.sh`"
 ```
 
-----------
 #### Linux Vim + Lua Installation
 
 ```
@@ -36,14 +35,11 @@ sudo checkinstall
 make isntall
 ```
 
-----------
-
 ##### Macvim + Lua Installation
+
 ```
 brew uninstall macvim
 brew remove macvim
 brew cleanup
 brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit
 ```
-
-----------
