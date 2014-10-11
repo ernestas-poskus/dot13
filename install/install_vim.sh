@@ -24,7 +24,8 @@ if ! type -p vim > /dev/null; then
       # Download and build a new vim
       sudo apt-get install libncurses5-dev libgnome2-dev libgnomeui-dev \
       libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
-      libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev mercurial
+      libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev mercurial \
+      vim-nox
       cd ~
       hg clone https://code.google.com/p/vim/
       cd vim
@@ -36,7 +37,7 @@ if ! type -p vim > /dev/null; then
                   --enable-perlinterp \
                   --enable-gui=gtk2 --enable-cscope --prefix=/usr \
                   --enable-luainterp \
-		  --with-lua-prefix=$(which lua)
+		  --with-lua-prefix=/usr/local
       echo "At this point, check the output of ./configure to see that it found lua.h."
       echo "If not, find out where it is (I'm afraid I can't remember where it was). "
       echo "Symlink to it in /usr/local with e.g. sudo ln -s ../lua.h and rerun ./configure."
