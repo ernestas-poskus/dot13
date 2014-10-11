@@ -36,7 +36,7 @@ if ! type -p vim > /dev/null; then
                   --enable-perlinterp \
                   --enable-gui=gtk2 --enable-cscope --prefix=/usr \
                   --enable-luainterp \
-                  --with-lua-prefix=/usr/local
+		  --with-lua-prefix=$(which lua)
       echo "At this point, check the output of ./configure to see that it found lua.h."
       echo "If not, find out where it is (I'm afraid I can't remember where it was). "
       echo "Symlink to it in /usr/local with e.g. sudo ln -s ../lua.h and rerun ./configure."
