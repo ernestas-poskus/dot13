@@ -31,7 +31,7 @@ sh -c "`curl -fsSL https://raw.githubusercontent.com/ernestas-poskus/dot13/maste
                   --enable-perlinterp \
                   --enable-gui=gtk2 --enable-cscope --prefix=/usr \
                   --enable-luainterp \
-                  --with-lua-prefix=/usr/local
+                  --with-lua-prefix=$(which lua)
 ```
 At this point, check the output of ./configure to see that it found lua.h.
 If not, find out where it is symlink to it in /usr/local with
