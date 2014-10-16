@@ -30,7 +30,7 @@
 
 [core]
   whitespace = fix,space-before-tab,indent-with-non-tab,trailing-space,cr-at-eol
-  editor = nano
+  editor = vim
   excludesfile = ~/.gitignore
   attributesfile = ~/.gitattributes
   autocrlf = input
