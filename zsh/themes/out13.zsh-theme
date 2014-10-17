@@ -1,4 +1,12 @@
+#!/usr/bin/env zsh
 # out13 theme
+
+# required for the prompt
+setopt prompt_subst
+autoload colors zsh/terminfo
+if [[ "$terminfo[colors]" -gt 8 ]]; then
+  colors
+fi
 
 ZSH_DOT13_PREFIX='λ'
 ZSH_DOT13_POSTFIX='$ '
