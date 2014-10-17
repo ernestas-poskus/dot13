@@ -45,7 +45,7 @@ ZSH_CUSTOM="$HOME/dot13/zsh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(rbenv git github textmate sublime ruby rails tmux coffee brew bundler)
+plugins=(rbenv git github ruby rails tmux coffee brew bundler)
 
 source $HOME/dot_hook.zsh
 
