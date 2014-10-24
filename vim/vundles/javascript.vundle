@@ -1,6 +1,0 @@
-Bundle "pangloss/vim-javascript"
-Bundle "othree/javascript-libraries-syntax.vim"
-Bundle "briancollins/vim-jst"
-Bundle "itspriddle/vim-jquery.git"
-Bundle "digitaltoad/vim-jade.git"
-Bundle "kchmck/vim-coffee-script"

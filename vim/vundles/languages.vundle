@@ -1,6 +1,5 @@
-Bundle "groenewege/vim-less.git"
-Bundle "jtratner/vim-flavored-markdown.git"
+" Syntax correction
 Bundle "scrooloose/syntastic.git"
-Bundle "garbas/vim-snipmate.git"
-Bundle "nelstrom/vim-markdown-preview"
-Bundle "skwp/vim-html-escape"
+
+" JavaScript
+Bundle "kchmck/vim-coffee-script"

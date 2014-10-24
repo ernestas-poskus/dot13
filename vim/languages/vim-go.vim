@@ -57,5 +57,3 @@ let g:go_highlight_methods = 1
 " Highlights struct names. By default it's disabled. >
 let g:go_highlight_structs = 1
 
-
-

@@ -1,5 +1,4 @@
 Bundle "tpope/vim-rails.git"
 Bundle "tpope/vim-rake.git"
-Bundle "tpope/vim-rvm.git"
 Bundle "vim-ruby/vim-ruby.git"
 Bundle "tpope/vim-Bundler"
