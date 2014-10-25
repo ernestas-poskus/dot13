@@ -6,4 +6,4 @@ echo "Upgrading"
 bash "$HOME/dot13/install/install_dotfiles.sh"
 
 # Resource sourcefiles
-source "$HOME/dot13/dot_hook.sh"
+source "$HOME/dot13/zsh/hook.sh"

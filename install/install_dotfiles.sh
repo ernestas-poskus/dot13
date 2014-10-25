@@ -15,6 +15,3 @@ done
 
 # Vim
 ln -sf "$DOT/vim/vimrc" "$HOME/.vimrc"
-
-# Linking sourcer hook
-ln -sf "$DOT/dot_hook.sh" "$HOME"
