@@ -7,12 +7,11 @@ else
 fi
 
 # Centalized sourcefiles
-for f ($HOME/dot13/sourcefiles/.*); do
+for f in $HOME/dot13/sourcefiles/*; do
   if [ -f $f ]; then
     source $f
   fi
 done
-unset $f
 
 # Work config
 if [ "$DOT13_ENV" = 'work' ]; then

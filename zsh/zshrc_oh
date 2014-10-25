@@ -47,7 +47,7 @@ ZSH_CUSTOM="$HOME/dot13/zsh"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(rbenv git github ruby rails tmux coffee brew bundler)
 
-source $HOME/dot_hook.zsh
+source $HOME/dot_hook.sh
 
 source $ZSH/oh-my-zsh.sh
 

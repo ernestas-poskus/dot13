@@ -1,2 +1,0 @@
-xmodmap -pke > .xmodmap # Dump keys
-xmodmap -e 'clear Lock' -e 'keycode 108 = BackSpace' # remap keys

@@ -23,16 +23,16 @@ if [ "$FRAMEWORK" == "p" ]; then
   for f in $DOT_PATH/zsh/prezto/* ; do
     ln -sf $f "$HOME/.$(basename $f)"
   done
-  ln -sf "$DOT_PATH/zsh/.zshrc_prezto" "$HOME/.zshrc"
+  ln -sf "$DOT_PATH/zsh/zshrc_prezto" "$HOME/.zshrc"
 
 elif [ "$FRAMEWORK" == "o" ]; then
   echo ".oh-my-zsh selected"
   if [ ! -d "$HOME/.oh-my-zsh" ]; then
     git clone git://github.com/robbyrussell/oh-my-zsh.git "$HOME/.oh-my-zsh"
   fi
-  ln -sf "$DOT_PATH/zsh/.zshrc_oh" "$HOME/.zshrc"
+  ln -sf "$DOT_PATH/zsh/zshrc_oh" "$HOME/.zshrc"
 
 else
   echo "zsh without framework selected";
-  ln -sf "$DOT_PATH/zsh/.zshrc" "$HOME/.zshrc"
+  ln -sf "$DOT_PATH/zsh/zshrc" "$HOME/.zshrc"
 fi

@@ -1,5 +1,5 @@
 # Framework'less config
-source $HOME/dot_hook.zsh
+source $HOME/dot_hook.sh
 
 # dot13 Config
 source $HOME/dot13/zsh/hook.sh
