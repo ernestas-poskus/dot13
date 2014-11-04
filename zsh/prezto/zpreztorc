@@ -24,7 +24,8 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'git' \
   'tmux' \
-  'ruby'
+  'ruby' \
+  'history-substring-search'
 
 #
 # Editor
