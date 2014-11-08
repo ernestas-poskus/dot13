@@ -43,3 +43,7 @@ brew remove macvim
 brew cleanup
 brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit
 ```
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ernestas-poskus/dot13/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
