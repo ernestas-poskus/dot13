@@ -19,6 +19,7 @@ alias n='node --max-old-space-size=4000'
 alias z='zsh'
 alias p="cd ~/Documents/projects"
 alias red='redis-cli'
+alias del='rm -rf'
 
 # Shortcuts
 alias dropbox="cd ~/Dropbox"
