@@ -18,8 +18,24 @@ alias v='vim'
 alias n='node --max-old-space-size=4000'
 alias z='zsh'
 alias p="cd ~/Documents/projects"
+
+# Programs
 alias red='redis-cli'
+
+# Convenience
 alias del='rm -rf'
+
+# Languages
+
+# Ruby
+alias be='bundle exec'
+alias bl='bundle list'
+alias bu='bundle update'
+alias bi='bundle install'
+
+# Go
+alias gr='go run'
+###########
 
 # Shortcuts
 alias dropbox="cd ~/Dropbox"
