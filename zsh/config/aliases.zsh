@@ -21,6 +21,7 @@ alias p="cd ~/Documents/projects"
 
 # Programs
 alias red='redis-cli'
+alias cas='cassandra-cli'
 
 # Convenience
 alias del='rm -rf'
