@@ -1,0 +1,2 @@
+Bundle 'othree/html5.vim'
+Bundle 'cakebaker/scss-syntax.vim'
