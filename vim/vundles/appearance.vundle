@@ -1,5 +1,0 @@
-Bundle "skwp/vim-colors-solarized"
-Bundle "itchyny/lightline.vim"
-Bundle "jby/tmux.vim.git"
-Bundle 'bling/vim-airline'
-Bundle 'godlygeek/csapprox'

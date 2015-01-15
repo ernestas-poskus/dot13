@@ -1,8 +1,0 @@
-Bundle 'gmarik/Vundle.vim'
-Bundle "jistr/vim-nerdtree-tabs.git"
-Bundle "scrooloose/nerdtree.git"
-Bundle "kien/ctrlp.vim"
-Bundle 'jasoncodes/ctrlp-modified.vim'
-Bundle "xolox/vim-misc"
-Bundle "xolox/vim-session"
-Bundle "vim-scripts/repmo.vim"

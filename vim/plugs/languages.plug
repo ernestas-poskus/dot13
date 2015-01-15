@@ -1,0 +1,22 @@
+" Syntax correction
+Plug 'scrooloose/syntastic'
+
+" HTML
+Plug 'othree/html5.vim', { 'for': ['html', 'erb'] }
+Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
+
+" JavaScript
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+
+" CoffeeScript
+Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+
+" Go
+Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'golang/lint', { 'for': 'go' }
+
+" Ruby
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
+Plug 'tpope/vim-rake', { 'for': 'ruby' }
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+Plug 'tpope/vim-Bundler', { 'for': 'ruby' }

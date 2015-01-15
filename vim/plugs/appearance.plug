@@ -1,0 +1,5 @@
+Plug 'skwp/vim-colors-solarized'
+Plug 'itchyny/lightline.vim'
+Plug 'jby/tmux.vim'
+Plug 'bling/vim-airline'
+Plug 'godlygeek/csapprox'

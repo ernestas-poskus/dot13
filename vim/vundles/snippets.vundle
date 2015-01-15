@@ -1,5 +1,0 @@
-" Snippet engine
-Plugin 'SirVer/ultisnips'
-
-" Snippets are separated from the engine.
-Plugin 'honza/vim-snippets'

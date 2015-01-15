@@ -1,6 +1,8 @@
 #!/bin/sh
 
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+mkdir -p ~/.vim/autoload
+curl -fLo ~/.vim/autoload/plug.vim \
+	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 if ! type -p vim > /dev/null; then
 
@@ -43,6 +45,5 @@ if ! type -p vim > /dev/null; then
       sudo checkinstall
       make install
     fi
-
   fi
 fi

@@ -15,5 +15,5 @@ nmap <silent> <leader>/ :nohlsearch<CR>
 " Vim key map & bindings
 set pastetoggle=<F2>
 
+" Line delete shortcut
 map - dd
-

@@ -1,5 +1,0 @@
-" Syntax correction
-Bundle "scrooloose/syntastic.git"
-
-" JavaScript
-Bundle "kchmck/vim-coffee-script"
