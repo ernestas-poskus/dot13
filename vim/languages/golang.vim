@@ -2,9 +2,16 @@
 autocmd FileType go setlocal tabstop=4 softtabstop=4 shiftwidth=4
 autocmd FileType go set nolist
 
+function! s:GoVet()
+	cexpr system("go vet " . shellescape(expand('%')))
+	copen
+endfunction
+command! GoVet :call s:GoVet()
+
 " Hooks
 set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
 autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow " GoLint after save
+autocmd BufWritePost,FileWritePost *.go execute 'GoVet' | cwindow " GoVet after save
 
 " Keyconfig
 au FileType go nmap <Leader>i <Plug>(go-info)
