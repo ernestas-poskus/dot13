@@ -21,3 +21,8 @@ nnoremap <silent> ,rxit :call ChangePendingRspecToXit()<cr>
 
 " insert a before { } block around a line
 nnoremap <silent> \bf ^ibefore { <esc>$a }
+
+" RSpec.vim mappings
+let g:rspec_runner = "os_x_iterm"
+let g:rspec_command = "!bundle exec rspec {spec}"
+map <Leader>t :call RunCurrentSpecFile()<CR>
