@@ -12,6 +12,7 @@ command! GoVet :call s:GoVet()
 set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
 autocmd BufWritePost,FileWritePost *.go execute 'GoVet' | cwindow " GoVet after save
 autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow " GoLint after save
+autocmd BufWritePost,FileWritePost *.go execute 'GoErrCheck' | cwindow " GoErrCheck after save
 
 " Keyconfig
 au FileType go nmap <Leader>i <Plug>(go-info)
