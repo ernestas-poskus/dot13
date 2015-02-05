@@ -1,8 +1,8 @@
 #!/bin/sh
 
 mkdir -p ~/.vim/autoload
-curl -fLo ~/.vim/autoload/plug.vim \
-	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mkdir -p ~/.vim/colors
+curl -fLo ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 if ! type -p vim > /dev/null; then
 
