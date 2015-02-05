@@ -18,9 +18,9 @@ set timeoutlen=100
 set updatetime=1000
 
 " Colors folder
-let g:solarized_termcolors=256
-"colorscheme solarized
-"set background=dark
+colorscheme molokai
+let g:rehash256 = 1
+let g:molokai_original = 1
 
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
