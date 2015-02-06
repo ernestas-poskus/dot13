@@ -14,3 +14,7 @@ Plug 'vim-scripts/AutoTag'
 Plug 'vim-scripts/lastpos.vim'
 Plug 'vim-scripts/sudo.vim'
 Plug 'goldfeld/ctrlr.vim'
+
+" Gist
+Plug 'mattn/gist-vim'
+Plug 'mattn/webapi-vim'
