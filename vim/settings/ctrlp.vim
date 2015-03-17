@@ -1,12 +1,9 @@
-if exists("g:ctrlp_user_command")
-  unlet g:ctrlp_user_command
-endif
 if executable('ag')
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s --ignore-case --files-with-matches --nocolor --nogroup -g ""'
 
   " ag is fast enough that CtrlP doesn't need to cache
-  let g:ctrlp_use_caching = 0
+  let g:ctrlp_use_caching = 1
 else
   " Fall back to using git ls-files if Ag is not available
   let g:ctrlp_custom_ignore = { 'dir': '\v(tmp|coverage|log|public|bin)$' }
