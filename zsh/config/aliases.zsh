@@ -15,6 +15,7 @@ alias -- -="cd -"
 # Letter
 alias b='bash'
 alias v='vim'
+alias e='emacs'
 alias n='node --max-old-space-size=4000'
 alias z='zsh'
 alias p="cd ~/Documents/projects"
