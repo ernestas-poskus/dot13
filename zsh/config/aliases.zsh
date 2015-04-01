@@ -24,6 +24,7 @@ alias t='go test'
 # Programs
 alias red='redis-cli'
 alias cas='cassandra-cli'
+alias oc='orientdb-console'
 
 # Convenience
 alias del='rm -rf'
