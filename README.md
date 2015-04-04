@@ -1,6 +1,8 @@
 Vim-files, dotfiles &amp; zsh
 =====================
 
+![Vim + Tmux setup](/doc/looks.png)
+
 ### Installation
 
 ```
