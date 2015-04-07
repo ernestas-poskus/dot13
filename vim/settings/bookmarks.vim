@@ -26,5 +26,5 @@ let g:bookmark_auto_save_file = '~/.vim/bookmarks'
 let g:bookmark_save_per_working_dir = 1 " Save bookmarks per working dir, the folder you opened vim from
 let g:bookmark_manage_per_buffer = 1 " Save bookmarks when leaving a buffer, load when entering one
 let g:bookmark_auto_close = 0 " Automatically close bookmarks split when jumping to a bookmark
-let g:bookmark_highlight_lines = 1 " Enables/disables line highlighting
+let g:bookmark_highlight_lines = 0 " Enables/disables line highlighting
 let g:bookmark_show_warning = 0 " Enables/disables warning when clearing all bookmarks
