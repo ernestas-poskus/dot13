@@ -6,4 +6,3 @@ Plug 'jasoncodes/ctrlp-modified.vim'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 Plug 'vim-scripts/repmo.vim'
-Plug 'MattesGroeger/vim-bookmarks' " File bookmarking
