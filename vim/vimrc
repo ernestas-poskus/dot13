@@ -97,7 +97,10 @@ filetype indent on
 set list
 set listchars=tab:▷⋅,trail:¤,nbsp:⋅,extends:>,precedes:<
 
-set nowrap       "Don't wrap lines
+set nowrap
+set textwidth=70
+set formatoptions=qrn1
+set colorcolumn=75
 set linebreak    "Wrap lines at convenient points
 
 " ================ Folds ============================
