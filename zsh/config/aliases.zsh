@@ -20,6 +20,8 @@ alias n='node --max-old-space-size=4000'
 alias z='zsh'
 alias p="cd ~/Documents/projects"
 alias t='go test'
+alias de='cd ~/.dev'
+alias det='cd ~/.dev/testing'
 
 # Programs
 alias red='redis-cli'
