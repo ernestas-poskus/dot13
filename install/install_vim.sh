@@ -3,6 +3,7 @@
 mkdir -p ~/.vim/autoload
 mkdir -p ~/.vim/colors
 curl -fLo ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+git clone https://github.com/ernestas-poskus/vim13.git ~/vim13/
 
 if ! type -p vim > /dev/null; then
 

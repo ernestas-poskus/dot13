@@ -14,4 +14,4 @@ for f in $HOME/dot13/dotfiles/*; do
 done
 
 # Vim
-ln -sf "$DOT/vim/vimrc" "$HOME/.vimrc"
+ln -sf "$HOME/vim13/vimrc" "$HOME/.vimrc"
