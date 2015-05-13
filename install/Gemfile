@@ -4,3 +4,4 @@ gem 'bundler'
 gem 'tmuxinator'
 gem 'facter'
 gem 'jazz_hands' # Pry package
+gem 'scss_lint' # vim syntastic
