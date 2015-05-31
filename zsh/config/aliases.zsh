@@ -43,6 +43,11 @@ alias bi='bundle install'
 alias gr='go run'
 ###########
 
+# Rust
+alias cr='cargo run'
+alias cb='cargo build'
+alias ct='cargo test'
+
 # Shortcuts
 alias dropbox="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
