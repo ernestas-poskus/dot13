@@ -1,5 +1,3 @@
-source ~/.gvm/scripts/gvm
-
 alias b='bundle exec'
 alias s='spring'
 alias bs='bundle exec spring'
