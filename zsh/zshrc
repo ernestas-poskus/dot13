@@ -1,5 +1,32 @@
-# dot13 Config
-source $HOME/dot13/zsh/hook.sh
+# Initialize zsh prezto
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
-# Set theme
-source "$HOME/dot13/zsh/themes/out13.zsh-theme"
+if [ -f "$HOME/.dot13_environment" ]; then
+  source "$HOME/.dot13_environment"
+else
+  echo '.dot13_environment - exports missing'
+fi
+
+# Centalized sourcefiles
+for f in $HOME/dot13/sourcefiles/*; do
+  if [ -f $f ]; then
+    source $f
+  fi
+done
+
+# Load all of your custom configurations from zsh/config
+for config_file in $HOME/dot13/zsh/config/*; do
+  source $config_file
+done
+
+# Load all of your custom configurations from zsh/functions
+for config_file in $HOME/dot13/zsh/functions/*; do
+  source $config_file
+done
+#
+# Load all of initializers from zsh/initializers
+for config_file in $HOME/dot13/zsh/initializers/*; do
+  source $config_file
+done

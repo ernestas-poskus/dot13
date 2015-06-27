@@ -1,5 +1,2 @@
-#Ruby
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 #Rust
 export RUST_SRC_PATH=$HOME/rust/src
