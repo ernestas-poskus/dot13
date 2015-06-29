@@ -7,3 +7,6 @@ zsh & .dot
 - **source**: exports, extra
 - **functions**: aliases, git
 
+### Dependencies
+
+- github.com/thewtex/tmux-mem-cpu-load
