@@ -19,7 +19,6 @@ alias e='emacs'
 alias n='node --max-old-space-size=4000'
 alias z='zsh'
 alias p="cd ~/Documents/projects"
-alias t='go test'
 alias de='cd ~/.dev'
 alias det='cd ~/.dev/testing'
 
@@ -40,7 +39,9 @@ alias bu='bundle update'
 alias bi='bundle install'
 
 # Go
-alias gr='go run'
+alias gr='go run *.go'
+alias t='go test'
+alias t2='go test -cpu=2'
 ###########
 
 # Rust
