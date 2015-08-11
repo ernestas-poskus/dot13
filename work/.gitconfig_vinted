@@ -96,3 +96,5 @@
 
 [include]
   path = ~/.gitconfig-work
+[rebase]
+	autosquash = true
