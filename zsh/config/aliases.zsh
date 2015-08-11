@@ -14,7 +14,7 @@ alias -- -="cd -"
 
 # Letter
 alias b='bash'
-alias v='nvim'
+alias v='vim'
 alias e='emacs'
 alias n='node --max-old-space-size=4000'
 alias z='zsh'
