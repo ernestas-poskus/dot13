@@ -6,3 +6,5 @@ tags
 .agignore
 .agignore2
 .vim-bookmarks
+/bower_components/*
+/node_modules/*
