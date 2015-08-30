@@ -12,3 +12,7 @@ __git_files () {
 function gpu() {
   git push -u origin `git symbolic-ref HEAD | sed -e "s/^refs\/heads\///"`
 }
+
+function gignore() {
+  touch .gitignore && curl -L -s "https://www.gitignore.io/api/$@" >> .gitignore
+}
