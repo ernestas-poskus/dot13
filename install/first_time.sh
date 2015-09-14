@@ -2,9 +2,6 @@
 
 echo "First time installation"
 
-# Programming Languages
-bash "$DOT_PATH_INSTALL/install_languages.sh"
-
 # Mac OS
 if [ "$DOT_KERNEL" == 'darwin' ]; then
   bash "$DOT_PATH_INSTALL/install_darwin.sh"
