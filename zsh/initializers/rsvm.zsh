@@ -1,1 +1,1 @@
-[[ -s /home/owr/.rsvm/rsvm.sh ]] && . /home/owr/.rsvm/rsvm.sh # This loads RSVM
+[[ -s ~/.rsvm/rsvm.sh ]] && . ~/.rsvm/rsvm.sh # This loads RSVM
