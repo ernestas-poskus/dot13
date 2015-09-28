@@ -26,6 +26,7 @@ alias det='cd ~/.dev/testing'
 alias red='redis-cli'
 alias cas='cassandra-cli'
 alias oc='orientdb-console'
+alias ki='bundle exec kitchen'
 
 # Convenience
 alias del='rm -rf'
