@@ -3,12 +3,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-if [ -f "$HOME/.dot13_environment" ]; then
-  source "$HOME/.dot13_environment"
-else
-  echo '.dot13_environment - exports missing'
-fi
-
 # Centalized sourcefiles
 for f in $HOME/dot13/sourcefiles/*; do
   if [ -f $f ]; then
