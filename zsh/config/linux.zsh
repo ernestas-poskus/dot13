@@ -1,4 +1,4 @@
-if [ "$DOT_KERNEL" = 'linux' ]; then
+if [ $(uname -s) = 'Linux' ]; then
   source "$DOT_PATH_LINUX/.linux_exports"
 
   # Remap keys
