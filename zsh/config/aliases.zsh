@@ -27,6 +27,7 @@ alias red='redis-cli'
 alias cas='cassandra-cli'
 alias oc='orientdb-console'
 alias ki='bundle exec kitchen'
+alias kn='bundle exec knife'
 
 # Convenience
 alias del='rm -rf'
