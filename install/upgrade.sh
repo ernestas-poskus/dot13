@@ -2,5 +2,12 @@
 
 echo "Upgrading"
 
-# Reinstall dotfiles
-bash "$HOME/dot13/install/install_dotfiles.sh"
+# Dot files
+for f in $HOME/dot13/dotfiles/*; do
+  if [ -f $f ]; then
+    ln -sf $f "$HOME/.$(basename $f)"
+  fi
+done
+
+# Vim
+ln -sf "$HOME/vim13/vimrc" "$HOME/.vimrc"

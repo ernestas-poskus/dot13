@@ -3,13 +3,16 @@
 if [ ! -d "$HOME/dot13" ]; then
     echo "Installing dot13"
     git clone https://github.com/ernestas-poskus/dot13.git "$HOME/dot13"
-    cd "$HOME/dot13"
-    bash "$HOME/dot13/tools/determine_kernel.sh"
-    bash "$HOME/dot13/tools/determine_environment.sh"
-    bash "$HOME/dot13/tools/determine_path.sh"
-    source "$HOME/.dot13_environment"
-    echo "Proceeding.. "
-    bash "$HOME/dot13/install/first_time.sh"
+
+    . $HOME/dot13/sourcefiles/exports
+
+    echo "First time installation"
+
+    bash "$DOT_PATH_INSTALL/install_languages.sh" # Programming Languages
+    bash "$DOT_PATH_INSTALL/install_zprezto.sh"
+
+    # Install/Upgrade
+    bash "$DOT_PATH_INSTALL/upgrade.sh"
 else
     echo 'Already installed'
     bash "$HOME/dot13/install/upgrade.sh"
