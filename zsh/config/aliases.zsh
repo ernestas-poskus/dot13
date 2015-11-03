@@ -32,6 +32,7 @@ alias kn='bundle exec knife'
 # Convenience
 alias del='rm -rf'
 alias todo='nvim ~/TODO'
+alias vag='vagrant'
 
 # Languages
 
