@@ -33,6 +33,7 @@ alias kn='bundle exec knife'
 alias del='rm -rf'
 alias todo='nvim ~/TODO'
 alias vag='vagrant'
+alias a='ansible'
 
 # Languages
 
