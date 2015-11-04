@@ -35,6 +35,7 @@ alias todo='nvim ~/TODO'
 alias vag='vagrant'
 alias a='ansible'
 alias ap='ansible-playbook'
+alias d='sudo docker'
 
 # Languages
 
