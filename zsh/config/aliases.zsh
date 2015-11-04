@@ -34,6 +34,7 @@ alias del='rm -rf'
 alias todo='nvim ~/TODO'
 alias vag='vagrant'
 alias a='ansible'
+alias ap='ansible-playbook'
 
 # Languages
 
