@@ -9,10 +9,7 @@ DOT_PATH_INSTALL="$DOT_PATH/install"
 
 export DOT_PATH="$DOT_PATH"
 export DOT_PATH_INSTALL="$DOT_PATH_INSTALL"
-export DOT_PATH_LINUX="$DOT_PATH/os/linux"
-export DOT_PATH_DARWIN="$DOT_PATH/os/darwin"
 
-export DOT13_ENV="home"
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LC_COLLATE=C
