@@ -3,13 +3,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Centalized sourcefiles
-for f in $HOME/dot13/sourcefiles/*; do
-  if [ -f $f ]; then
-    source $f
-  fi
-done
-
 # Load all of your custom configurations from zsh/config
 for config_file in $HOME/dot13/zsh/config/*; do
   source $config_file
