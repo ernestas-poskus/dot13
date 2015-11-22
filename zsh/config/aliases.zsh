@@ -1,6 +1,5 @@
 # Config edit
 alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
 alias addalias="vim ~/dot13/zsh/config/aliases.zsh"
 alias dotupgrade="source ~/dot13/install/upgrade.sh"
 
