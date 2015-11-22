@@ -5,6 +5,9 @@
 tmp
 coverage
 log
+node_modules
+public
+vendor
 
 # Extensions
 *.png
