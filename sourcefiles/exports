@@ -23,3 +23,6 @@ else
 fi
 
 export GO15VENDOREXPERIMENT=1
+
+# NEOVIM ubuntu color workaround
+export NVIM_TUI_ENABLE_TRUE_COLOR=1
