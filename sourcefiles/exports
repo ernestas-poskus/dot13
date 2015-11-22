@@ -12,15 +12,11 @@ export DOT_PATH_INSTALL="$DOT_PATH_INSTALL"
 export DOT_PATH_LINUX="$DOT_PATH/os/linux"
 export DOT_PATH_DARWIN="$DOT_PATH/os/darwin"
 
-if [ $(uname -s) = 'Darwin' ]; then
-  export DOT13_ENV="work"
-else
-  export DOT13_ENV="home"
-  export LANG=en_US.UTF-8
-  export LANGUAGE=en_US.UTF-8
-  export LC_COLLATE=C
-  export LC_CTYPE=en_US.UTF-8
-fi
+export DOT13_ENV="home"
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export LC_COLLATE=C
+export LC_CTYPE=en_US.UTF-8
 
 export GO15VENDOREXPERIMENT=1
 
