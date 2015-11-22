@@ -1,7 +1,6 @@
 # Config edit
 alias zshconfig="vim ~/.zshrc"
 alias addalias="vim ~/dot13/zsh/config/aliases.zsh"
-alias dotupgrade="source ~/dot13/install/upgrade.sh"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -17,7 +16,6 @@ alias v='nvim'
 alias e='emacs'
 alias n='node --max-old-space-size=4000'
 alias z='zsh'
-alias p="cd ~/Documents/projects"
 alias de='cd ~/.dev'
 alias det='cd ~/.dev/testing'
 
