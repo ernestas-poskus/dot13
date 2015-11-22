@@ -4,8 +4,6 @@ if [ ! -d "$HOME/dot13" ]; then
     echo "Installing dot13"
     git clone https://github.com/ernestas-poskus/dot13.git "$HOME/dot13"
 
-    . $HOME/dot13/sourcefiles/exports
-
     echo "First time installation"
     if [ $(uname -s) = 'Linux' ]; then
       # Update sources
@@ -22,16 +20,16 @@ if [ ! -d "$HOME/dot13" ]; then
       if [ ! -d "$HOME/.zprezto" ]; then
         git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
       fi
-
-      for f in $DOT_PATH/zsh/prezto/* ; do
-        ln -sf $f "$HOME/.$(basename $f)"
-      done
-
-      ln -sf "$DOT_PATH/zsh/zshrc" "$HOME/.zshrc"
     fi
 fi
 
 echo "Upgrading"
+
+for f in $HOME/dot13/zsh/prezto/* ; do
+  ln -sf $f "$HOME/.$(basename $f)"
+done
+
+ln -sf "$HOME/dot13/zsh/zshrc" "$HOME/.zshrc"
 
 # Dot files
 for f in $HOME/dot13/dotfiles/*; do
