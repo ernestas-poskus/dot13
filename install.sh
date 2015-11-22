@@ -7,13 +7,38 @@ if [ ! -d "$HOME/dot13" ]; then
     . $HOME/dot13/sourcefiles/exports
 
     echo "First time installation"
+    if [ $(uname -s) = 'Linux' ]; then
+      # Update sources
+      sudo apt-get install update
 
-    bash "$DOT_PATH_INSTALL/install_languages.sh" # Programming Languages
-    bash "$DOT_PATH_INSTALL/install_zprezto.sh"
+      # Libraries
+      sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev
 
-    # Install/Upgrade
-    bash "$DOT_PATH_INSTALL/upgrade.sh"
-else
-    echo 'Already installed'
-    bash "$HOME/dot13/install/upgrade.sh"
+      sudo apt-get install silversearcher-ag tmux exuberant-ctags
+
+      # Zsh
+      sudo apt-get install -y zsh
+
+      if [ ! -d "$HOME/.zprezto" ]; then
+        git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+      fi
+
+      for f in $DOT_PATH/zsh/prezto/* ; do
+        ln -sf $f "$HOME/.$(basename $f)"
+      done
+
+      ln -sf "$DOT_PATH/zsh/zshrc" "$HOME/.zshrc"
+    fi
 fi
+
+echo "Upgrading"
+
+# Dot files
+for f in $HOME/dot13/dotfiles/*; do
+  if [ -f $f ]; then
+    ln -sf $f "$HOME/.$(basename $f)"
+  fi
+done
+
+# Vim
+ln -sf "$HOME/vim13/vimrc" "$HOME/.vimrc"
