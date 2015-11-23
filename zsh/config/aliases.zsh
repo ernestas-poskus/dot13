@@ -1,6 +1,6 @@
 # Config edit
-alias zshconfig="vim ~/.zshrc"
-alias addalias="vim ~/dot13/zsh/config/aliases.zsh"
+alias zshconfig="$EDITOR ~/.zshrc"
+alias addalias="$EDITOR ~/dot13/zsh/config/aliases.zsh"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -12,7 +12,7 @@ alias -- -="cd -"
 
 # Letter
 alias b='bash'
-alias v='nvim'
+alias v="$EDITOR"
 alias e='emacs'
 alias n='node --max-old-space-size=4000'
 alias z='zsh'
@@ -28,7 +28,7 @@ alias kn='bundle exec knife'
 
 # Convenience
 alias del='rm -rf'
-alias todo='nvim ~/TODO'
+alias todo="$EDITOR ~/TODO"
 alias vag='vagrant'
 alias a='ansible'
 alias ap='ansible-playbook'
