@@ -16,12 +16,12 @@ if [ ! -d $RUST_SRC_PATH ]; then
   git clone https://github.com/rust-lang/rust.git $rust_src
 fi
 
-# Install Rust racer
-if which racer > /dev/null; then
-  cargo install --git 'https://github.com/phildawes/racer.git'
-fi
-
 # Add Carbo bin executables to $PATH
 if [ -d "$HOME/.cargo" ]; then
   export PATH="$HOME/.cargo/bin:$PATH"
+fi
+
+# Install Rust racer
+if ! which racer > /dev/null; then
+  cargo install --git 'https://github.com/phildawes/racer.git'
 fi
