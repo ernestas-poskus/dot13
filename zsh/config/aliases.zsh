@@ -60,6 +60,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dot13="cd ~/dot13"
 alias vim13="cd ~/vim13"
+alias emacs13="cd ~/emacs13"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
