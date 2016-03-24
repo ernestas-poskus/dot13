@@ -8,3 +8,4 @@ tags
 .vim-bookmarks
 /bower_components/*
 /node_modules/*
+.#*
