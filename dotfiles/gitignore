@@ -1,7 +1,6 @@
 tmp/*
 temp/*
 .DS_Store
-tags
 .bundle
 .agignore
 .agignore2
