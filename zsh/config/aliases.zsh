@@ -36,6 +36,7 @@ alias ap='ansible-playbook'
 alias d='sudo docker'
 alias s='sudo'
 alias ss='sudo service'
+alias px='ps auxf'
 
 # Languages
 
