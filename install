@@ -37,6 +37,3 @@ for f in $HOME/dot13/dotfiles/*; do
     ln -sf $f "$HOME/.$(basename $f)"
   fi
 done
-
-# Vim
-ln -sf "$HOME/vim13/vimrc" "$HOME/.vimrc"
