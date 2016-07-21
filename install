@@ -23,9 +23,10 @@ if [ ! -d "$HOME/dot13" ]; then
     fi
 fi
 
-echo "Upgrading"
+echo "Installing"
 
 for f in $HOME/dot13/zsh/prezto/* ; do
+  echo "ln -sf $f $HOME/.$(basename $f)"
   ln -sf $f "$HOME/.$(basename $f)"
 done
 
@@ -34,6 +35,7 @@ ln -sf "$HOME/dot13/zsh/zshrc" "$HOME/.zshrc"
 # Dot files
 for f in $HOME/dot13/dotfiles/*; do
   if [ -f $f ]; then
+    echo "ln -sf $f $HOME/.$(basename $f)"
     ln -sf $f "$HOME/.$(basename $f)"
   fi
 done
