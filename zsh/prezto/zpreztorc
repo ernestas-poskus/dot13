@@ -78,7 +78,12 @@ zstyle ':prezto:module:editor' dot-expansion 'yes'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
+if [ "$LOGNAME" = 'ow' ]; then
 zstyle ':prezto:module:prompt' theme 'out13'
+else
+zstyle ':prezto:module:prompt' theme 'minimal'
+fi
+
 
 #
 # Ruby
