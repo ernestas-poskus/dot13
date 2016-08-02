@@ -20,8 +20,3 @@ fi
 if [ -d "$HOME/.cargo" ]; then
   export PATH="$HOME/.cargo/bin:$PATH"
 fi
-
-# Install Rust racer
-if ! which racer > /dev/null; then
-  cargo install --git 'https://github.com/phildawes/racer.git'
-fi
