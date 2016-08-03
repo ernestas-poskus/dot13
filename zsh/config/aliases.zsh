@@ -83,7 +83,7 @@ alias laR="ls -laR"
 # List Simple
 alias ll='ls -l'
 
-alias l="ls -lahtr"
+alias l="ls -lAhtr"
 
 # Gzip-enabled `curl`
 alias gurl='curl --compressed'
