@@ -33,7 +33,6 @@ alias okr="$EDITOR ~/OKR"
 alias vag='vagrant'
 alias a='ansible'
 alias ap='ansible-playbook'
-alias d='sudo docker'
 alias s='sudo'
 alias px='ps auxf'
 
