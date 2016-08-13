@@ -13,10 +13,22 @@ rust_src="$HOME/rust-src"
 export RUST_SRC_PATH="$rust_src/src"
 
 if [ ! -d $RUST_SRC_PATH ]; then
+  echo "Downloading Rust source $RUST_SRC_PATH"
   git clone https://github.com/rust-lang/rust.git $rust_src
 fi
 
 # Add Carbo bin executables to $PATH
 if [ -d "$HOME/.cargo" ]; then
   export PATH="$HOME/.cargo/bin:$PATH"
+fi
+
+# Install Rust racer
+if ! which racer > /dev/null; then
+  echo 'Installing https://github.com/phildawes/racer.git'
+  cargo install --git 'https://github.com/phildawes/racer.git'
+fi
+
+if ! which rustfmt > /dev/null; then
+  echo 'Installing rustfmt'
+  cargo install rustfmt
 fi
