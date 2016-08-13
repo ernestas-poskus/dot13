@@ -7,7 +7,7 @@ fi
 [[ -s ~/.rsvm/rsvm.sh ]] && . ~/.rsvm/rsvm.sh # This loads RSVM
 
 # Rust src
-rust_src="$HOME/rust-src"
+rust_src="$HOME/.dev/rust-src"
 
 # Exporting RUST_SRC_PATH
 export RUST_SRC_PATH="$rust_src/src"
