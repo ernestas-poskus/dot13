@@ -112,4 +112,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-[[ -s "/home/owr/.gvm/scripts/gvm" ]] && source "/home/owr/.gvm/scripts/gvm"
