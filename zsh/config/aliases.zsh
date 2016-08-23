@@ -50,11 +50,6 @@ alias t='go test'
 alias t2='go test -cpu=2'
 ###########
 
-# Rust
-alias cr='cargo run'
-alias cb='cargo build'
-alias ct='cargo test'
-
 # Shortcuts
 alias dropbox="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
