@@ -27,7 +27,6 @@ alias ki='bundle exec kitchen'
 alias kn='bundle exec knife'
 
 # Convenience
-alias del='rm -rf'
 alias todo="$EDITOR ~/TODO"
 alias okr="$EDITOR ~/OKR"
 alias vag='vagrant'
