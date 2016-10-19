@@ -22,7 +22,6 @@ alias det='cd ~/.dev/testing'
 # Programs
 alias red='redis-cli'
 alias cas='cqlsh'
-alias oc='orientdb-console'
 alias ki='bundle exec kitchen'
 alias kn='bundle exec knife'
 
