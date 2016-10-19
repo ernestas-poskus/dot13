@@ -22,7 +22,6 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'prompt' \
-  'git' \
   'tmux' \
   'ruby' \
   'history-substring-search'
