@@ -18,6 +18,7 @@ zstyle ':prezto:load' pmodule \
   'editor' \
   'history' \
   'spectrum' \
+  'utility' \
   'completion' \
   'prompt' \
   'history-substring-search'
