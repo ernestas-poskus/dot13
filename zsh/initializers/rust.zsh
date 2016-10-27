@@ -24,8 +24,3 @@ if ! which rustfmt > /dev/null; then
   echo 'Installing rustfmt'
   cargo install -f rustfmt
 fi
-
-if ! which rg > /dev/null; then
-  echo 'Installing ripgrep'
-  cargo install ripgrep
-fi
