@@ -1,4 +1,3 @@
-#!/bin/sh
 export NVM_DIR="$HOME/.nvm"
 if [ ! -d $NVM_DIR ]; then
   echo 'NVM not found'
