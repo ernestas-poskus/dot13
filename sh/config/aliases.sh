@@ -66,12 +66,12 @@ alias laF="ls -laF ${colorflag}"
 alias lF="ls -lF ${colorflag} | grep --color=never '^d'"
 
 # List Recursively
-alias laR="ls -laR"
+alias laR="ls -laR ${colorflag}"
 
 # List Simple
-alias ll='ls -l'
+alias ll='ls -l ${colorflag}'
 
-alias l="ls -lAhtr"
+alias l="ls -lAhtr ${colorflag}"
 
 # Get week number
 alias week='date +%V'
