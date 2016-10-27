@@ -4,17 +4,17 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Load all of your custom configurations from zsh/config
-for config_file in $HOME/dot13/zsh/config/*; do
+for config_file in $HOME/dot13/sh/config/*; do
   source $config_file
 done
 
 # Load all of your custom configurations from zsh/functions
-for config_file in $HOME/dot13/zsh/functions/*; do
+for config_file in $HOME/dot13/sh/functions/*; do
   source $config_file
 done
 #
 # Load all of initializers from zsh/initializers
-for config_file in $HOME/dot13/zsh/initializers/*; do
+for config_file in $HOME/dot13/sh/initializers/*; do
   source $config_file
 done
 
