@@ -1,6 +1,5 @@
 # Config edit
-alias zshconfig="$EDITOR ~/.zshrc"
-alias addalias="$EDITOR ~/dot13/zsh/config/aliases.zsh"
+alias addalias="$EDITOR ~/dot13/sh/config/aliases.sh"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ..="cd .."
@@ -11,13 +10,11 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Letter
-alias b='bash'
 alias v="$EDITOR"
 alias e='emacs'
-alias n='node --max-old-space-size=4000'
-alias z='zsh'
 alias de='cd ~/.dev'
 alias det='cd ~/.dev/testing'
+alias g='git'
 
 # Programs
 alias red='redis-cli'
@@ -31,7 +28,6 @@ alias okr="$EDITOR ~/OKR"
 alias vag='vagrant'
 alias a='ansible'
 alias ap='ansible-playbook'
-alias s='sudo'
 alias px='ps auxf'
 
 # Languages
