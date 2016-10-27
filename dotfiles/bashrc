@@ -43,13 +43,13 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Load all configuration
-for config_file in $HOME/dot13/sh/config/*; do
+# Load all functions
+for config_file in $HOME/dot13/sh/functions/*; do
   source $config_file
 done
 
-# Load all functions
-for config_file in $HOME/dot13/sh/functions/*; do
+# Load all configuration
+for config_file in $HOME/dot13/sh/config/*; do
   source $config_file
 done
 
