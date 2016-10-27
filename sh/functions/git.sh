@@ -16,11 +16,3 @@ function gpu() {
 function gignore() {
   touch .gitignore && curl -L -s "https://www.gitignore.io/api/$@" >> .gitignore
 }
-
-function g() {
-  if [ $# -eq 0 ]; then
-    git status
-  else
-    git $@
-  fi
-}
