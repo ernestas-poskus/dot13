@@ -20,3 +20,7 @@ function gignore() {
 function git_current_branch() {
   if [ -d '.git' ]; then git rev-parse --abbrev-ref HEAD; fi
 }
+
+function update_upstream() {
+  git fetch upstream && git merge upstream/master && git push
+}
