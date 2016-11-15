@@ -1,3 +1,5 @@
+# Reference: https://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
+
 # append to the history file, don't overwrite it
 shopt -s histappend
 
@@ -20,3 +22,16 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# If set, a command name that is the name of a directory is executed as if it were the argument to the cd command.
+shopt -s autocd
+
+# If set, a command name that is the name of a directory is executed as if it were the argument to the cd command.
+shopt -s cdable_vars
+
+# If set, minor errors in the spelling of a directory component in a cd command will be corrected.
+# The errors checked for are transposed characters, a missing character, and a character too many.
+# If a correction is found, the corrected path is printed, and the command proceeds.
+shopt -s cdspell
+
+# If set, the extended pattern matching features described above (see Pattern Matching) are enabled.
+shopt -s extglob
