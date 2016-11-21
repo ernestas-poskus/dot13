@@ -1,3 +1,3 @@
 # Fuzzy search
 # https://github.com/junegunn/fzf.vim
-[ -f ~/.fzf ] && source ~/.fzf.bash
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
