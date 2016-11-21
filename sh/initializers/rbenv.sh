@@ -1,5 +1,10 @@
 # Ruby
-if ! type -p ruby > /dev/null; then
+if [ -d "$HOME/.rbenv" ]; then
+  # Lightweight Ruby version manager
+  # https://github.com/sstephenson/rbenv
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+else
   echo 'Ruby not found, attempting to install'
 
   echo "Installing Ruby version manager: rbenv"
@@ -10,9 +15,5 @@ if ! type -p ruby > /dev/null; then
 
   echo "rbenv -> ruby-build -> install.sh"
   sudo ~/.rbenv/plugins/ruby-build/install.sh
-fi
 
-# Lightweight Ruby version manager
-# https://github.com/sstephenson/rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+fi
