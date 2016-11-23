@@ -3,6 +3,26 @@
 # for examples
 
 export EDITOR=nvim
+export DOT13_INSTALLED="$HOME/dot13/.installed"
+
+function dot13_installed() {
+  test -f $DOT13_INSTALLED && grep -q $1 $DOT13_INSTALLED
+}
+
+function dot13_mark_installed() {
+  touch $DOT13_INSTALLED
+  (grep -q $1 $DOT13_INSTALLED && echo "[$1] already installed") ||
+    echo $1 >> $DOT13_INSTALLED
+}
+
+function dot13_installed_or_mark() {
+  if dot13_installed "$1"; then
+    return 1
+  else
+    dot13_mark_installed "$1"
+    return 0
+  fi
+}
 
 # If not running interactively, don't do anything
 case $- in
