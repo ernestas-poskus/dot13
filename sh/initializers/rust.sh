@@ -15,12 +15,12 @@ if [ -d "$HOME/.cargo" ]; then
 fi
 
 # Install Rust racer
-if ! which racer > /dev/null; then
+if dot13_installed_or_mark 'racer' > /dev/null; then
   echo 'Installing https://github.com/phildawes/racer.git'
   cargo install -f --git 'https://github.com/phildawes/racer.git'
 fi
 
-if ! which rustfmt > /dev/null; then
+if dot13_installed_or_mark 'rustfmt'; then
   echo 'Installing rustfmt'
   cargo install -f rustfmt
 fi
