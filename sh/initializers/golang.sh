@@ -10,12 +10,18 @@ fi
 [[ -s ~/.gvm/scripts/gvm ]] && source ~/.gvm/scripts/gvm
 export GOBIN="$GOPATH"/bin/
 
-if which go > /dev/null && dot13_installed_or_mark 'golanglinters'; then
-  go get -u -v github.com/nsf/gocode
-  go get -u -v github.com/rogpeppe/godef
-  go get -u -v golang.org/x/tools/cmd/guru
-  go get -u -v golang.org/x/tools/cmd/gorename
-  go get -u -v golang.org/x/tools/cmd/goimports
-  go get -u -v github.com/alecthomas/gometalinter
-  gometalinter --install --update
+if which go > /dev/null; then
+  if dot13_installed_or_mark 'golanglinters'; then
+    go get -u -v github.com/nsf/gocode
+    go get -u -v github.com/rogpeppe/godef
+    go get -u -v golang.org/x/tools/cmd/guru
+    go get -u -v golang.org/x/tools/cmd/gorename
+    go get -u -v golang.org/x/tools/cmd/goimports
+    go get -u -v github.com/alecthomas/gometalinter
+    gometalinter --install --update
+  fi
+
+  if dot13_installed_or_mark 'golangpackages'; then
+    go get -u github.com/spf13/hugo
+  fi
 fi
