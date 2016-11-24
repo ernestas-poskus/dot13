@@ -15,5 +15,11 @@ else
 
   echo "rbenv -> ruby-build -> install.sh"
   sudo ~/.rbenv/plugins/ruby-build/install.sh
+fi
 
+if which ruby > /dev/null && dot13_installed_or_mark 'rubytools'; then
+  gem install pry
+  gem install pry-doc
+  gem install ruby_parser
+  gem install rubocop
 fi
