@@ -40,8 +40,12 @@ alias bi='bundle install'
 
 # Go
 alias gr='go run *.go'
-alias t='go test'
-alias t2='go test -cpu=2'
+alias gt='go :est'
+alias gt2='go test -cpu=2'
+
+# Rust
+alias cr='cargo run'
+alias ct='cargo test -- --nocapture'
 ###########
 
 # Shortcuts
