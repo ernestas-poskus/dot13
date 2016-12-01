@@ -89,3 +89,6 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 # For example, to list all directories that contain a certain file:
 # find . -name .gitattributes | map dirname
 alias map="xargs -n1"
+
+# Cassandra
+alias cqlsh='cqlsh 172.17.0.1 --cqlversion=3.4.0'
