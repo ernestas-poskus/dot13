@@ -15,6 +15,7 @@ alias e='emacs'
 alias de='cd ~/.dev'
 alias det='cd ~/.dev/testing'
 alias g='git'
+alias s='git status'
 
 # Programs
 alias red='redis-cli'
