@@ -39,11 +39,6 @@ alias bl='bundle list'
 alias bu='bundle update'
 alias bi='bundle install'
 
-# Go
-alias gr='go run *.go'
-alias gt='go :est'
-alias gt2='go test -cpu=2'
-
 # Rust
 alias cr='cargo run'
 alias ct='cargo test -- --nocapture'
