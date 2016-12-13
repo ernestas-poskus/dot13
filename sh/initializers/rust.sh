@@ -24,3 +24,8 @@ if dot13_installed_or_mark 'rustfmt'; then
   echo 'Installing rustfmt'
   cargo install -f rustfmt
 fi
+
+if dot13_installed_or_mark 'clippy'; then
+  echo 'Installing clippy'
+  cargo install -f clippy
+fi
