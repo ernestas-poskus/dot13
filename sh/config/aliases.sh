@@ -17,6 +17,9 @@ alias det='cd ~/.dev/testing'
 alias g='git'
 alias s='git status'
 
+# Git
+alias st='git status -sb'
+
 # Programs
 alias red='redis-cli'
 alias cas='cqlsh'
