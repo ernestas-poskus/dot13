@@ -7,7 +7,7 @@ fi
 [[ -s ~/.rsvm/rsvm.sh ]] && . ~/.rsvm/rsvm.sh # This loads RSVM
 
 # Exporting RUST_SRC_PATH
-export RUST_SRC_PATH="$HOME/.rsvm/current/src/rustc-source/src"
+export RUST_SRC_PATH="$HOME/.rsvm/current/src/rustc-nightly-src/src"
 
 # Add Carbo bin executables to $PATH
 if [ -d "$HOME/.cargo" ]; then
