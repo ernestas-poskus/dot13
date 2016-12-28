@@ -17,3 +17,10 @@ function docker_prometheus() {
 function docker_prometheus_pushgateway() {
   docker run --name pushgateway -d -p 9091:9091 prom/pushgateway
 }
+
+function docker_full_cleanup() {
+  docker stop $(docker ps -a -q) &> /dev/null
+  docker rm $(docker ps -a -q) &> /dev/null
+  docker rmi $(docker images -a -q) &> /dev/null
+  docker images -a
+}
