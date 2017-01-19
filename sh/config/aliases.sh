@@ -13,6 +13,7 @@ alias -- -="cd -"
 alias v="$EDITOR"
 alias e='emacs'
 alias de='cd ~/.dev'
+alias dr='cd ~/.dev/rust'
 alias det='cd ~/.dev/testing'
 alias g='git'
 alias s='git status'
