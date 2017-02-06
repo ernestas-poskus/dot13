@@ -1,5 +1,12 @@
 if which pip > /dev/null; then
-  if dot13_installed_or_mark 'pippackages'; then
-    pip install cqlsh --user # Cassandra console
+
+  # Cassandra console
+  if dot13_installed_or_mark 'pipcqlsh'; then
+    pip install cqlsh --user
+  fi
+
+  # Wakatime tracking
+  if dot13_installed_or_mark 'pipwakatime'; then
+    pip install wakatime --user
   fi
 fi
