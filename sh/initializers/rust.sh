@@ -4,10 +4,14 @@ if [ ! -d $RSVM_DIR ]; then
   echo 'Installing Rust Version manager'
   curl -L https://raw.github.com/sdepold/rsvm/master/install.sh | sh
 fi
-[[ -s ~/.rsvm/rsvm.sh ]] && . ~/.rsvm/rsvm.sh # This loads RSVM
 
 # Exporting RUST_SRC_PATH
 export RUST_SRC_PATH="$HOME/.rsvm/current/src/rustc-nightly-src/src"
+
+if dot13_installed_or_mark 'rustup' > /dev/null; then
+  echo 'Installing rustup'
+  curl https://sh.rustup.rs -sSf | sh
+fi
 
 # Add Carbo bin executables to $PATH
 if [ -d "$HOME/.cargo" ]; then
