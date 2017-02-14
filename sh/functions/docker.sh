@@ -24,3 +24,7 @@ function docker_full_cleanup() {
   docker rmi $(docker images -a -q) &> /dev/null
   docker images -a
 }
+
+function docker_scylla() {
+  docker run --name scylla -d -p 9042:9042 -p 9160:9160 -d scylladb/scylla
+}
