@@ -28,3 +28,8 @@ function docker_full_cleanup() {
 function docker_scylla() {
   docker run --name scylla -d -p 9042:9042 -p 9160:9160 -d scylladb/scylla
 }
+
+function docker_squid() {
+  mkdir /tmp/squid3 &> /dev/null
+  docker run --name squid -d -p 3128:3128 --volume /srv/docker/squid/cache:/tmp/squid3 sameersbn/squid
+}
