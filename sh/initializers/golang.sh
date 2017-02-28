@@ -24,4 +24,9 @@ if which go > /dev/null; then
   if dot13_installed_or_mark 'golangpackages'; then
     go get -u github.com/spf13/hugo
   fi
+
+  # Package manager
+  if dot13_installed_or_mark 'golangglide'; then
+    go get -u github.com/Masterminds/glide
+  fi
 fi
