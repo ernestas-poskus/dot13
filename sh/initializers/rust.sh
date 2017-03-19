@@ -33,3 +33,8 @@ if dot13_installed_or_mark 'clippy'; then
   echo 'Installing clippy'
   cargo install -f clippy
 fi
+
+if dot13_installed_or_mark 'rust-diesel_cli'; then
+  echo 'Installing diesel_cli'
+  cargo install -f diesel_cli --no-default-features --features postgres
+fi
