@@ -47,6 +47,7 @@ alias bi='bundle install'
 # Rust
 alias cr='cargo run'
 alias ct='cargo test -- --nocapture'
+alias cc='cargo check --verbose'
 ###########
 
 # Shortcuts
