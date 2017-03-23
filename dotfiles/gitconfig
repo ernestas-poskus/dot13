@@ -52,11 +52,11 @@
   ft = fetch -v
   m = merge
   ms = merge --squash'
-  di = diff
   pop = stash pop
   amend = commit --amend
   subupdate = git submodule foreach git pull origin master
   pf = push --force
+  d = diff
 
 [branch]
   autosetupmerge = always
