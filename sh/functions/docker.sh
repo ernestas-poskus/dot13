@@ -33,3 +33,7 @@ function docker_squid() {
   mkdir /tmp/squid3 &> /dev/null
   docker run --name squid -d -p 3128:3128 --volume /srv/docker/squid/cache:/tmp/squid3 sameersbn/squid
 }
+
+function docker_elasticsearch() {
+  docker run --name elasticsearch -d -p 9200:9200 -e "http.host=0.0.0.0" -e "xpack.security.enabled=false" -e "transport.host=127.0.0.1" docker.elastic.co/elasticsearch/elasticsearch:5.3.0
+}
