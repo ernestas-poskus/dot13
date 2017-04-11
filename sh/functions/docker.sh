@@ -37,3 +37,7 @@ function docker_squid() {
 function docker_elasticsearch() {
   docker run --name elasticsearch -d -p 9200:9200 -e "http.host=0.0.0.0" -e "xpack.security.enabled=false" -e "transport.host=127.0.0.1" docker.elastic.co/elasticsearch/elasticsearch:5.3.0
 }
+
+function docker_kibana() {
+  docker run --name kibana -d -p 5601:5601 -e "SERVER_HOST=0.0.0.0" -e "ELASTICSEARCH_URL=http://172.17.0.1:9200" -e "XPACK_SECURITY_ENABLED=false" docker.elastic.co/kibana/kibana:5.3.0
+}
