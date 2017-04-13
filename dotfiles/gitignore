@@ -10,3 +10,4 @@ temp/*
 .#*
 .kitchen
 *flycheck*
+vendor/bundle
