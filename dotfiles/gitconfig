@@ -37,7 +37,7 @@
 
 [alias]
   st = "status -sb"
-  b = branch
+  b = "branch --all"
   co = checkout
   df = diff --word-diff
   lg = log -p
