@@ -30,7 +30,6 @@ alias kn='bundle exec knife'
 
 # Convenience
 alias todo="$EDITOR ~/TODO"
-alias okr="$EDITOR ~/OKR"
 alias vag='vagrant'
 alias a='ansible'
 alias ap='ansible-playbook'
