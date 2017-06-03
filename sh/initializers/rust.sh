@@ -8,7 +8,7 @@ fi
 # Exporting RUST_SRC_PATH
 export RUST_SRC_PATH="$HOME/.rsvm/current/src/rustc-nightly-src/src"
 
-if dot13_installed_or_mark 'rustup' > /dev/null; then
+if dot13_installed_or_mark 'rust-rustup' > /dev/null; then
   echo 'Installing rustup'
   curl https://sh.rustup.rs -sSf | sh
 fi
@@ -19,17 +19,17 @@ if [ -d "$HOME/.cargo" ]; then
 fi
 
 # Install Rust racer
-if dot13_installed_or_mark 'racer' > /dev/null; then
+if dot13_installed_or_mark 'rust-racer' > /dev/null; then
   echo 'Installing https://github.com/phildawes/racer.git'
   cargo install -f --git 'https://github.com/phildawes/racer.git'
 fi
 
-if dot13_installed_or_mark 'rustfmt'; then
+if dot13_installed_or_mark 'rust-rustfmt'; then
   echo 'Installing rustfmt'
   cargo install -f rustfmt
 fi
 
-if dot13_installed_or_mark 'clippy'; then
+if dot13_installed_or_mark 'rust-clippy'; then
   echo 'Installing clippy'
   cargo install -f clippy
 fi
