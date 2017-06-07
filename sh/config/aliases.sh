@@ -19,9 +19,6 @@ alias g='git'
 alias s='git status'
 alias c='cargo'
 
-# Git
-alias st='git status -sb'
-
 # Programs
 alias red='redis-cli'
 alias cas='cqlsh'
