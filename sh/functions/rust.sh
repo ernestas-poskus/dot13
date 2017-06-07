@@ -3,6 +3,6 @@ function ct() {
     echo 'Test file found, running..'
     ./test "$@"
   else
-    cargo test -- --nocapture
+    cargo test --all-features -- --nocapture
   fi
 }
