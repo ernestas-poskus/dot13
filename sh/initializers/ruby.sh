@@ -22,4 +22,5 @@ if which ruby > /dev/null && dot13_installed_or_mark 'rubytools'; then
   gem install pry-doc
   gem install ruby_parser
   gem install rubocop
+  gem install mailcatcher
 fi
