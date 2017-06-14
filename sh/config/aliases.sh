@@ -88,4 +88,7 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 alias map="xargs -n1"
 
 # Cassandra
-alias cqlsh='cqlsh 172.17.0.1 --cqlversion=3.4.0'
+alias ccqlsh='cqlsh 172.17.0.1 --cqlversion=3.4.0'
+
+# Scyalla
+alias csqlsh='cqlsh 172.17.0.1 --cqlversion=3.3.1'
