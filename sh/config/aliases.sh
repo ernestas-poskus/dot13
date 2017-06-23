@@ -20,7 +20,6 @@ alias ki='bundle exec kitchen'
 alias kn='bundle exec knife'
 
 # Convenience
-alias todo="$EDITOR ~/TODO"
 alias dot13="cd ~/dot13"
 alias vim13="cd ~/vim13"
 alias emacs13="cd ~/emacs13"
