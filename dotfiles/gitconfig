@@ -29,7 +29,7 @@
   untracked = cyan
 
 [core]
-  whitespace = fix,space-before-tab,indent-with-non-tab,trailing-space,cr-at-eol
+  whitespace = fix,trailing-space,space-before-tab,tab-in-indent,cr-at-eol
   editor = "$EDITOR"
   excludesfile = ~/.gitignore
   attributesfile = ~/.gitattributes
