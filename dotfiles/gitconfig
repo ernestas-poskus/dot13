@@ -58,6 +58,7 @@
   pf = push --force
   d = diff
   p = push
+  s = show
 
 [branch]
   autosetupmerge = always
