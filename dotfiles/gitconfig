@@ -57,6 +57,7 @@
   subupdate = git submodule foreach git pull origin master
   pf = push --force
   d = diff
+  p = push
 
 [branch]
   autosetupmerge = always
