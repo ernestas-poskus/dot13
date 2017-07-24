@@ -23,4 +23,5 @@ if which ruby > /dev/null && dot13_installed_or_mark 'rubytools'; then
   gem install ruby_parser
   gem install rubocop
   gem install mailcatcher
+  gem install neovim
 fi
