@@ -40,7 +40,7 @@
   b = "branch --all"
   co = checkout
   df = diff --word-diff
-  lg = log -p
+  l = log -p
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
