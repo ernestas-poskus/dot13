@@ -28,7 +28,7 @@ alias emacs13="cd ~/emacs13"
 alias be='bundle exec'
 
 # Rust
-alias cr='RUST_LOG=debug cargo run'
+alias cr='RUST_BACKTRACE=1 RUST_LOG=debug cargo run'
 alias cc='cargo check --verbose --all-features'
 
 # Detect which `ls` flavor is in use
