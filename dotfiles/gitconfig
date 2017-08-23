@@ -40,7 +40,6 @@
   b = "branch --all"
   co = checkout
   df = diff --word-diff
-  l = log -p
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
@@ -59,6 +58,7 @@
   d = diff
   p = push
   s = show
+  l = log --graph --all --color --pretty=format:\"%x1b[31m%h%x1b[32m%d%x1b[0m%x20%s\" -16
 
 [branch]
   autosetupmerge = always
