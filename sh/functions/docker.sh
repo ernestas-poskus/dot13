@@ -41,3 +41,7 @@ function docker_elasticsearch() {
 function docker_kibana() {
   docker run --name kibana -d -p 5601:5601 -e "SERVER_HOST=0.0.0.0" -e "ELASTICSEARCH_URL=http://172.17.0.1:9200" -e "XPACK_SECURITY_ENABLED=false" docker.elastic.co/kibana/kibana:5.3.0
 }
+
+function docker_here() {
+  docker run --rm -it -v $(pwd):/source $1
+}
