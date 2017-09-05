@@ -9,9 +9,9 @@ alias .....="cd ../../../.."
 
 # Letter
 alias v="$EDITOR"
-alias de='cd ~/.dev'
-alias dr='cd ~/.dev/rust'
-alias det='cd ~/.dev/testing'
+alias de='cd ~/dev'
+alias dr='cd ~/dev/rust'
+alias det='cd ~/dev/testing'
 alias g='git'
 alias c='cargo'
 
