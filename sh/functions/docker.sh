@@ -45,3 +45,7 @@ function docker_kibana() {
 function docker_here() {
   docker run --rm -it -v $(pwd):/source $1
 }
+
+function docker_mail() {
+  docker run --name mail -d -p 1080:1080 -p 1025:1025 schickling/mailcatcher
+}
