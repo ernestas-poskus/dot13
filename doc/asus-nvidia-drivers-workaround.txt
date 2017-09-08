@@ -1,4 +1,0 @@
-sudo apt-get install unity-tweak-tool
-unity-tweak-tool --reset
-
-DISPLAY=:0 dconf reset -f /org/compiz/
