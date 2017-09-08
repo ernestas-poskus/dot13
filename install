@@ -3,24 +3,6 @@
 if [ ! -d "$HOME/dot13" ]; then
     echo "Installing dot13"
     git clone https://github.com/ernestas-poskus/dot13.git "$HOME/dot13"
-
-    echo "First time installation"
-    if [ $(uname -s) = 'Linux' ]; then
-      # Update sources
-      sudo apt-get install update
-
-      # Libraries
-      sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev
-
-      sudo apt-get install silversearcher-ag tmux exuberant-ctags
-
-      # Zsh
-      sudo apt-get install -y zsh
-
-      if [ ! -d "$HOME/.zprezto" ]; then
-        git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-      fi
-    fi
 fi
 
 echo "Installing"
