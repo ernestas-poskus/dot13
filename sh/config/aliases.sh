@@ -22,7 +22,6 @@ alias kn='bundle exec knife'
 # Convenience
 alias dot13="cd ~/dot13"
 alias vim13="cd ~/vim13"
-alias emacs13="cd ~/emacs13"
 
 # Ruby
 alias be='bundle exec'
