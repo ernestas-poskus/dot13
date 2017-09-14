@@ -1,4 +1,4 @@
-zsh & .dot
+bash & .dot
 =====================
 
 ### Install
@@ -9,7 +9,7 @@ curl -L https://raw.githubusercontent.com/ernestas-poskus/dot13/master/install |
 
 ### Features
 
-- **zsh**: prezto
+- **shell**: bash
 - **os**: linux
-- **dot**: agignore, bashrc, ctags, curlrc, gemrc, gitattributes, gitconfig, gitignore, nanorc, tmux.conf, wgetrc
-- **functions**: coffee, cron, ctags, curl, extract, git, tmux, utilities, wget
+- **dot**: agignore, bashrc, curlrc, gdbinit, gemrc, gitattributes, gitconfig, gitignore, nanorc, taskrc, tmux.conf, wakatime.cfg, wgetrc
+- **functions**: backup, cron_help, curl, docker, git kernel, random_password, rust, server, wget
