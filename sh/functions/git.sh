@@ -24,3 +24,7 @@ function git_current_branch() {
 function update_upstream() {
   git fetch upstream && git merge upstream/master && git push
 }
+
+function update_upstream_master() {
+  git checkout master && update_upstream && git checkout -
+}
