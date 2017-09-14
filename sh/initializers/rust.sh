@@ -38,3 +38,11 @@ if dot13_installed_or_mark 'rust-diesel_cli'; then
   echo 'Installing diesel_cli'
   cargo install -f diesel_cli --no-default-features --features postgres
 fi
+
+if dot13_installed_or_mark 'rust-sccache'; then
+  echo 'Installing Rust sccache'
+  cargo install -f sccache
+fi
+
+# Rust shared build cache
+export RUSTC_WRAPPER='sccache'
