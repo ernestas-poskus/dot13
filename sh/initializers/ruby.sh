@@ -25,3 +25,8 @@ if which ruby > /dev/null && dot13_installed_or_mark 'rubytools'; then
   gem install mailcatcher
   gem install neovim
 fi
+
+if which ruby > /dev/null && dot13_installed_or_mark 'ruby-chef'; then
+  echo 'Installing Chef tools'
+  gem install chef chef-dk
+fi
