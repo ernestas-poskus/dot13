@@ -49,3 +49,8 @@ function docker_here() {
 function docker_mail() {
   docker run --name mail -d -p 1080:1080 -p 1025:1025 schickling/mailcatcher
 }
+
+function docker_dgraph() {
+  mkdir -p ~/dgraph
+  docker run -it -p 8080:8080 -p 9080:9080 -v ~/dgraph:/dgraph -d --name dgraph dgraph/dgraph dgraph --bindall=true --memory_mb 2048
+}
