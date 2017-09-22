@@ -51,3 +51,8 @@ if dot13_installed_or_mark 'cargo-update'; then
   echo 'Installing cargo update'
   cargo install cargo-update
 fi
+
+if dot13_installed_or_mark 'cargo-edit'; then
+  echo 'Installing cargo edit'
+  cargo install cargo-edit
+fi
