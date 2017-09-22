@@ -46,3 +46,8 @@ fi
 
 # Rust shared build cache
 export RUSTC_WRAPPER='sccache'
+
+if dot13_installed_or_mark 'cargo-update'; then
+  echo 'Installing cargo update'
+  cargo install cargo-update
+fi
