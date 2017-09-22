@@ -39,7 +39,6 @@
   st = "status -sb"
   b = "branch --all"
   co = checkout
-  df = diff --word-diff
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
