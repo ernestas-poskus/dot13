@@ -19,6 +19,7 @@ function dot13_installed_or_mark() {
   if dot13_installed "$1"; then
     return 1
   else
+    echo "Installing $1"
     dot13_mark_installed "$1"
     return 0
   fi

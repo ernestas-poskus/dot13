@@ -17,16 +17,32 @@ else
   sudo ~/.rbenv/plugins/ruby-build/install.sh
 fi
 
-if which ruby > /dev/null && dot13_installed_or_mark 'rubytools'; then
-  gem install pry
-  gem install pry-doc
-  gem install ruby_parser
-  gem install rubocop
-  gem install mailcatcher
-  gem install neovim
-fi
+if which ruby > /dev/null; then
+  if dot13_installed_or_mark 'ruby-pry'; then
+    gem install pry
+  fi
 
-if which ruby > /dev/null && dot13_installed_or_mark 'ruby-chef'; then
-  echo 'Installing Chef tools'
-  gem install chef chef-dk
+  if dot13_installed_or_mark 'ruby-pry-doc'; then
+    gem install pry-doc
+  fi
+
+  if dot13_installed_or_mark 'ruby-ruby_parser'; then
+    gem install ruby_parser
+  fi
+
+  if dot13_installed_or_mark 'ruby-rubycop'; then
+    gem install rubycop
+  fi
+
+  if dot13_installed_or_mark 'ruby-mailcatcher'; then
+    gem install mailcatcher
+  fi
+
+  if dot13_installed_or_mark 'ruby-neovim'; then
+    gem install neovim
+  fi
+
+  if dot13_installed_or_mark 'ruby-chef'; then
+    gem install chef chef-dk
+  fi
 fi

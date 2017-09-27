@@ -8,8 +8,7 @@ if [ -d $GOPATH ]; then
   export GOPATH=$GOPATH
   export PATH="$GOBIN:$PATH"
 
-  if dot13_installed_or_mark 'golang-goreman' > /dev/null; then
-    echo 'Installing Golang goreman'
+  if dot13_installed_or_mark 'golang-goreman'; then
     go get -v github.com/mattn/goreman
   fi
 fi
