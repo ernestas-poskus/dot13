@@ -49,4 +49,8 @@ if which ruby > /dev/null; then
   if dot13_installed_or_mark 'ruby-scss_lint'; then
     gem install scss_lint
   fi
+
+  if dot13_installed_or_mark 'ruby-overcommit'; then
+    gem install overcommit
+  fi
 fi
