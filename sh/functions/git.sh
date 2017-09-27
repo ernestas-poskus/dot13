@@ -1,5 +1,3 @@
-# Git - zsh based functions
-
 function gbase() {
   git fetch && git rebase
 }

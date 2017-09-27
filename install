@@ -5,14 +5,7 @@ if [ ! -d "$HOME/dot13" ]; then
     git clone https://github.com/ernestas-poskus/dot13.git "$HOME/dot13"
 fi
 
-echo "Installing"
-
-for f in $HOME/dot13/zsh/prezto/* ; do
-  echo "ln -sf $f $HOME/.$(basename $f)"
-  ln -sf $f "$HOME/.$(basename $f)"
-done
-
-ln -sf "$HOME/dot13/zsh/zshrc" "$HOME/.zshrc"
+echo "Linking dotfiles"
 
 # Dot files
 for f in $HOME/dot13/dotfiles/*; do
