@@ -26,3 +26,15 @@ function update_upstream() {
 function update_upstream_master() {
   git checkout master && update_upstream && git checkout -
 }
+
+function check_overcommit() {
+  if [ -d ".git" ]; then
+    if [ ! -f ".overcommit.yml" ]; then
+      pwd=`pwd`
+      echo 'Installing .overcommit.yml'
+      cp "$DOT13_PATH/templates/.overcommit.yml" "$pwd/"
+      overcommit --install
+      overcommit --sign
+    fi
+  fi
+}
