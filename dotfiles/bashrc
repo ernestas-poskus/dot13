@@ -3,7 +3,8 @@
 # for examples
 
 export EDITOR=nvim || vim
-export DOT13_INSTALLED="$HOME/dot13/.installed"
+export DOT13_PATH="$HOME/dot13"
+export DOT13_INSTALLED="$DOT13_PATH/.installed"
 
 function dot13_installed() {
   test -f $DOT13_INSTALLED && grep -q $1 $DOT13_INSTALLED
