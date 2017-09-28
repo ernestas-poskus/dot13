@@ -1,3 +1,4 @@
 dev.sh
 .installed
 temp.sh
+!/templates/.overcommit.yml
