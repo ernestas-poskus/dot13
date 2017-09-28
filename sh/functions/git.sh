@@ -16,6 +16,7 @@ function gignore() {
 }
 
 function git_current_branch() {
+  check_overcommit
   if [ -d '.git' ]; then git rev-parse --abbrev-ref HEAD; fi
 }
 
