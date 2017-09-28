@@ -24,6 +24,30 @@ PreCommit:
   LineEndings:
     enabled: true
 
+  GitGuilt:
+    enabled: true
+
+  ExecutePermissions:
+    enabled: true
+
+  FixMe:
+    enabled: true
+
+  JsonSyntax:
+    enabled: true
+
+  BerksfileCheck:
+    enabled: true
+
+  RuboCop:
+    enabled: true
+
+  MergeConflicts:
+    enabled: true
+
+  ShellCheck:
+    enabled: true
+
 CommitMsg:
   RussianNovel:
     enabled: true
@@ -35,6 +59,21 @@ CommitMsg:
     max_body_width: 72
 
   SpellCheck:
+    enabled: true
+
+  CapitalizedSubject:
+    enabled: true
+
+  EmptyMessage:
+    enabled: true
+
+  SingleLineSubject:
+    enabled: true
+
+  HardTabs:
+    enabled: true
+
+  TrailingPeriod:
     enabled: true
 
 #PostCheckout:
