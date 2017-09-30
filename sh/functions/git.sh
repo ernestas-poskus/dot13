@@ -30,10 +30,10 @@ function update_upstream_master() {
 
 function check_overcommit() {
   if [ -d ".git" ]; then
-    if [ ! -f ".overcommit.yml" ]; then
-      pwd=`pwd`
+    template="$DOT13_PATH/templates/.overcommit.yml"
+    if [ ! -L ".overcommit.yml" ]; then
       echo 'Installing .overcommit.yml'
-      cp "$DOT13_PATH/templates/.overcommit.yml" "$pwd/"
+      ln -sf "$template" "$(pwd)/.overcommit.yml"
       overcommit --install
       overcommit --sign
     fi
