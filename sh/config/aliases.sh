@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Config edit
 alias addalias="$EDITOR ~/dot13/sh/config/aliases.sh"
 
@@ -14,6 +16,7 @@ alias dr='cd ~/dev/rust'
 alias det='cd ~/dev/testing'
 alias g='git'
 alias c='cargo'
+alias ff='foreman start'
 
 # Programs
 alias ki='bundle exec kitchen'
