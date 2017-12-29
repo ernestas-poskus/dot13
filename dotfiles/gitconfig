@@ -58,6 +58,7 @@
   p = push
   s = show
   l = log --graph --all --color --pretty=format:\"%x1b[31m%h%x1b[32m%d%x1b[0m%x20%s\" -16
+  c = commit
 
 [branch]
   autosetupmerge = always
@@ -94,4 +95,4 @@
 
 [mergetool "diffmerge"]
   cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
-  trustExitCode = true
+  trwoekrsustExitCode = true
