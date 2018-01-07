@@ -6,3 +6,8 @@ function ct() {
     cargo test --all-features -- --nocapture
   fi
 }
+
+function cu() {
+  find . -name 'Cargo.toml' -execdir cargo upgrade \;
+  find . -name 'Cargo.toml' -execdir cargo update \;
+}
