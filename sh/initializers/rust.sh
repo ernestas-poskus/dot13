@@ -1,6 +1,6 @@
 # RSVM - Rust version manager
 export RSVM_DIR="$HOME/.rsvm"
-if [ ! -d $RSVM_DIR ]; then
+if [ ! -d "$RSVM_DIR" ]; then
   echo 'Installing Rust Version manager'
   curl -L https://raw.github.com/sdepold/rsvm/master/install.sh | sh
 fi
@@ -46,5 +46,10 @@ if which rustc > /dev/null; then
 
   if dot13_installed_or_mark 'cargo-edit'; then
     cargo install cargo-edit
+  fi
+
+  if dot13_installed_or_mark 'cargo-bins'; then
+    sudo dnf install file-devel
+    cargo install bins
   fi
 fi

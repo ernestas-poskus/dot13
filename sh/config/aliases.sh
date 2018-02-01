@@ -18,7 +18,7 @@ alias g='git'
 alias c='cargo'
 alias ff='foreman start'
 
-# Programs
+# Chef
 alias ki='bundle exec kitchen'
 alias kn='bundle exec knife'
 
