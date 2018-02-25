@@ -22,8 +22,8 @@ if which rustc > /dev/null; then
     cargo install -f --git 'https://github.com/phildawes/racer.git'
   fi
 
-  if dot13_installed_or_mark 'rust-rustfmt'; then
-    cargo install -f rustfmt
+  if dot13_installed_or_mark 'rust-rustfmt-nightly'; then
+    cargo install -f rustfmt-nightly
   fi
 
   if dot13_installed_or_mark 'rust-clippy'; then
