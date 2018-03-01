@@ -59,6 +59,7 @@
   s = show
   l = log --graph --all --color --pretty=format:\"%x1b[31m%h%x1b[32m%d%x1b[0m%x20%s\" -16
   c = commit
+  bl = log -p -M --follow --stat --
 
 [branch]
   autosetupmerge = always
