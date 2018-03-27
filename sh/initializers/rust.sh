@@ -52,4 +52,8 @@ if which rustc > /dev/null; then
     sudo dnf install file-devel
     cargo install bins
   fi
+
+  if dot13_installed_or_mark 'cargo-watch'; then
+    cargo install cargo-watch
+  fi
 fi
