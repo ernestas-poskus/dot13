@@ -31,6 +31,7 @@ alias be='bundle exec'
 
 # Rust
 alias cr='RUST_BACKTRACE=1 RUST_LOG=debug cargo run'
+alias cri='RUST_LOG=info cargo run'
 alias cc='cargo check --verbose --all-features'
 
 # Detect which `ls` flavor is in use
