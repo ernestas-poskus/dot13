@@ -10,3 +10,7 @@ function curljson() {
 function headers() {
   curl -L -v -D - -o /dev/null $@
 }
+
+function head_headers() {
+  curl -X HEAD -L -v -D - -o /dev/null $@
+}
