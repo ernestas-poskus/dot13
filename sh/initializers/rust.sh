@@ -56,4 +56,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'cargo-watch'; then
     cargo install cargo-watch
   fi
+
+  if dot13_installed_or_mark 'cargo-src'; then
+    cargo install cargo-src
+  fi
 fi
