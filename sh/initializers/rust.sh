@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # RSVM - Rust version manager
 export RSVM_DIR="$HOME/.rsvm"
 if [ ! -d "$RSVM_DIR" ]; then
@@ -63,5 +65,9 @@ if which rustc > /dev/null; then
 
   if dot13_installed_or_mark 'cargo-bump'; then
     cargo install cargo-bump
+  fi
+
+  if dot13_installed_or_mark 'cargo-asm'; then
+    cargo install cargo-asm
   fi
 fi
