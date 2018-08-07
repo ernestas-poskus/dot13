@@ -28,10 +28,6 @@ if which rustc > /dev/null; then
     cargo install -f rustfmt-nightly
   fi
 
-  if dot13_installed_or_mark 'rust-clippy'; then
-    cargo install -f clippy
-  fi
-
   if dot13_installed_or_mark 'rust-diesel_cli'; then
     cargo install -f diesel_cli --no-default-features --features postgres
   fi
