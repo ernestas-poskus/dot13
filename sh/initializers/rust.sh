@@ -66,4 +66,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'cargo-asm'; then
     cargo install cargo-asm
   fi
+
+  if dot13_installed_or_mark 'cargo-bin-nutrition'; then
+    cargo install --git https://github.com/ernestas-poskus/nutrition --force
+  fi
 fi
