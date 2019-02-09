@@ -29,3 +29,12 @@ data.location=~/.task
 #include /usr/share/doc/task/rc/solarized-light-256.theme
 #include /usr/share/doc/task/rc/no-color.theme
 
+color=on
+
+# default.due=tom
+default.priority=M
+recurrence.limit=1
+
+due=1
+monthsperline=3
+calendar.holidays=full
