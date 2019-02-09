@@ -74,4 +74,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'cargo-bin-wennsshein'; then
     cargo install --git https://github.com/ernestas-poskus/wennsshein --force
   fi
+
+  if dot13_installed_or_mark 'hyperfine'; then
+    cargo install hyperfine
+  fi
 fi
