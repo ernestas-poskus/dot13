@@ -78,4 +78,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'hyperfine'; then
     cargo install hyperfine
   fi
+
+  if dot13_installed_or_mark 'flamegraph'; then
+    cargo install flamegraph
+  fi
 fi
