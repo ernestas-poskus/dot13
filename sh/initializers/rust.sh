@@ -82,4 +82,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'flamegraph'; then
     cargo install flamegraph
   fi
+
+  if dot13_installed_or_mark 'cargo-rpm'; then
+    cargo install cargo-rpm
+  fi
 fi
