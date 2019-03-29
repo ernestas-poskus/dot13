@@ -32,12 +32,6 @@ if which rustc > /dev/null; then
     cargo install -f diesel_cli --no-default-features --features postgres
   fi
 
-  if dot13_installed_or_mark 'rust-sccache'; then
-    cargo install -f sccache
-  fi
-
-  export RUSTC_WRAPPER='sccache'
-
   if dot13_installed_or_mark 'cargo-update'; then
     cargo install cargo-update
   fi
