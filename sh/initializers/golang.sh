@@ -12,6 +12,10 @@ fi
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 export GOBIN="$GOPATH"/bin/
 
+if dot13_installed_or_mark 'golang-dependencies'; then
+  sudo dnf install -y bison
+fi
+
 if command -v go > /dev/null; then
   if dot13_installed_or_mark 'golanglinters'; then
     go get -u -v github.com/nsf/gocode
