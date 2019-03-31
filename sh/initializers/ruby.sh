@@ -15,6 +15,9 @@ else
 
   echo "rbenv -> ruby-build -> install.sh"
   sudo ~/.rbenv/plugins/ruby-build/install.sh
+
+  echo "Installing dependencies"
+  sudo dnf install -y readline-devel gcc-c++
 fi
 
 if which ruby > /dev/null; then
