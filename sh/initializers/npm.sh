@@ -9,6 +9,7 @@ fi
 
 # shellcheck source=initializers/nvm.sh
 [ -s "$NVM_BIN" ] && . "$NVM_BIN"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 if dot13_installed_or_mark 'npm-eslint'; then
   npm i -g eslint
