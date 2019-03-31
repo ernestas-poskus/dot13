@@ -1,5 +1,4 @@
-if which pip > /dev/null; then
-
+if which pip &> /dev/null; then
   # Cassandra console
   if dot13_installed_or_mark 'pip-cqlsh'; then
     pip install cqlsh --user
