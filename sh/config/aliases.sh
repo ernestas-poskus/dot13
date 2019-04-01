@@ -16,7 +16,7 @@ alias dr='cd ~/dev/rust'
 alias det='cd ~/dev/testing'
 alias g='git'
 alias c='cargo'
-alias ff='foreman start'
+alias ff='goreman start'
 
 # Chef
 alias ki='bundle exec kitchen'
