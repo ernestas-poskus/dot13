@@ -26,6 +26,10 @@ if command -v go > /dev/null; then
     go get -u -v github.com/alecthomas/gometalinter
     gometalinter --install --update
   fi
+
+  if dot13_installed_or_mark 'golang-goreman'; then
+    go get -v github.com/mattn/goreman
+  fi
 fi
 
 GOPATH="$HOME/golang/go"
@@ -35,8 +39,4 @@ if [ -d "$GOPATH" ]; then
   mkdir -p "$GOBIN"
   export GOPATH=$GOPATH
   export PATH="$GOBIN:$PATH"
-
-  if dot13_installed_or_mark 'golang-goreman'; then
-    go get -v github.com/mattn/goreman
-  fi
 fi
