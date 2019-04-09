@@ -41,7 +41,7 @@ if which rustc > /dev/null; then
     cargo install cargo-edit
   fi
 
-  if dot13_installed_or_mark 'cargo-bins'; then
+  if dot13_installed_or_mark 'rust-bins'; then
     sudo dnf install file-devel
     cargo install bins
   fi
@@ -62,23 +62,27 @@ if which rustc > /dev/null; then
     cargo install cargo-asm
   fi
 
-  if dot13_installed_or_mark 'cargo-bin-nutrition'; then
+  if dot13_installed_or_mark 'rust-bin-nutrition'; then
     cargo install --git https://github.com/ernestas-poskus/nutrition --force
   fi
 
-  if dot13_installed_or_mark 'cargo-bin-wennsshein'; then
+  if dot13_installed_or_mark 'rust-bin-wennsshein'; then
     cargo install --git https://github.com/ernestas-poskus/wennsshein --force
   fi
 
-  if dot13_installed_or_mark 'hyperfine'; then
+  if dot13_installed_or_mark 'rust-hyperfine'; then
     cargo install hyperfine
   fi
 
-  if dot13_installed_or_mark 'flamegraph'; then
+  if dot13_installed_or_mark 'rust-flamegraph'; then
     cargo install flamegraph
   fi
 
   if dot13_installed_or_mark 'cargo-rpm'; then
     cargo install cargo-rpm
+  fi
+
+  if dot13_installed_or_mark 'rust-ripgrep'; then
+    cargo install ripgrep
   fi
 fi
