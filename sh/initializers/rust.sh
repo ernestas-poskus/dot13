@@ -85,4 +85,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-ripgrep'; then
     cargo install ripgrep
   fi
+
+  if dot13_installed_or_mark 'rust-procs'; then
+    cargo install procs
+  fi
 fi
