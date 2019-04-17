@@ -17,6 +17,7 @@ alias det='cd ~/dev/testing'
 alias g='git'
 alias c='cargo'
 alias ff='goreman start'
+alias nn='nuxt dev --port 3000'
 
 # Chef
 alias ki='bundle exec kitchen'
