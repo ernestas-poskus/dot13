@@ -8,4 +8,12 @@ if which pip &> /dev/null; then
   if dot13_installed_or_mark 'pip-wakatime'; then
     pip install wakatime --user
   fi
+
+  if dot13_installed_or_mark 'pip-ansible-lint'; then
+    pip install ansible-lint --user
+  fi
+
+  if dot13_installed_or_mark 'pip-yamllint'; then
+    pip install yamllint --user
+  fi
 fi
