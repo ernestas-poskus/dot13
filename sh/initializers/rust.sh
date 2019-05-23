@@ -89,4 +89,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-procs'; then
     cargo install procs
   fi
+
+  if dot13_installed_or_mark 'rust-cargo-call-stack'; then
+    cargo install cargo-call-stack
+  fi
 fi
