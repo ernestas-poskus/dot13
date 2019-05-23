@@ -93,4 +93,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-cargo-call-stack'; then
     cargo install cargo-call-stack
   fi
+
+  if dot13_installed_or_mark 'rust-zola'; then
+    cargo install --git https://github.com/getzola/zola --force
+  fi
 fi
