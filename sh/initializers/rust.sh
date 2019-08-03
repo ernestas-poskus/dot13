@@ -24,8 +24,8 @@ if which rustc > /dev/null; then
     cargo install -f racer
   fi
 
-  if dot13_installed_or_mark 'rust-rustfmt-nightly'; then
-    cargo install -f rustfmt-nightly
+  if dot13_installed_or_mark 'rust-rustfmt'; then
+    cargo install --git https://github.com/rust-lang/rustfmt --force
   fi
 
   if dot13_installed_or_mark 'rust-diesel_cli'; then
