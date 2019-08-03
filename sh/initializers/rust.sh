@@ -97,4 +97,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-zola'; then
     cargo install --git https://github.com/getzola/zola --force
   fi
+
+   if dot13_installed_or_mark 'rust-bat'; then
+     cargo install --git https://github.com/sharkdp/bat --force
+   fi
 fi
