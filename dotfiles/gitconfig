@@ -45,6 +45,7 @@
   credit = commit --amend --author "$1 <$2>" -C HEAD
   rb = rebase
   cm = commit -m
+  mc = commit -m
   aa = add --all
   ft = fetch -v
   m = merge
