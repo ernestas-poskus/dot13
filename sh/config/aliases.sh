@@ -43,9 +43,3 @@ else # OS X `ls`
 fi
 
 alias l="ls -lAhtr ${colorflag}"
-
-# Cassandra
-alias ccqlsh='cqlsh 172.17.0.1 --cqlversion=3.4.0'
-
-# Scylla
-alias csqlsh='cqlsh 172.17.0.1 --cqlversion=3.3.1'
