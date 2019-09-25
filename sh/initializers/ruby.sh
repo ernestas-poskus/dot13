@@ -46,7 +46,8 @@ if which ruby > /dev/null; then
   fi
 
   if dot13_installed_or_mark 'ruby-chef'; then
-    gem install chef chef-dk
+    gem install chef -v 12.22.1
+    gem install chef-dk -v 1.1.16
   fi
 
   if dot13_installed_or_mark 'ruby-scss_lint'; then
