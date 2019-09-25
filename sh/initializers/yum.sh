@@ -7,3 +7,7 @@ fi
 if dot13_installed_or_mark 'yum-jq'; then
   sudo yum install -y jq
 fi
+
+if dot13_installed_or_mark 'yum-graphviz-gv'; then
+  sudo yum install -y graphviz gv
+fi
