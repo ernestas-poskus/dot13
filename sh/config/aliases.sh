@@ -16,7 +16,7 @@ alias dr='cd ~/dev/rust'
 alias det='cd ~/dev/testing'
 alias g='git'
 alias c='cargo'
-alias ff='goreman start'
+alias ff='goreman -b 3000 start'
 alias nn='npm run dev'
 
 # Chef
