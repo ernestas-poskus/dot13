@@ -12,3 +12,4 @@ temp/*
 *flycheck*
 vendor/bundle
 .overcommit.yml
+.rgignore
