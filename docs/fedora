@@ -1,0 +1,2 @@
+# Remove protected packages
+dnf --setopt=protected_packages= remove $(dnf repoquery --duplicated --latest-limit=-1 -q)
