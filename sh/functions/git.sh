@@ -31,7 +31,7 @@ function update_upstream_master() {
 function check_overcommit() {
   if [ -d ".git" ]; then
     template="$DOT13_PATH/templates/.overcommit.yml"
-    if [ ! -L ".overcommit.yml" ]; then
+    if [ ! -L ".overcommit.yml" -a ! -f ".overcommit.yml" ]; then
       echo 'Installing .overcommit.yml'
       ln -sf "$template" "$(pwd)/.overcommit.yml"
       overcommit --install
