@@ -8,10 +8,13 @@ if [ ! -d "$RSVM_DIR" ]; then
 fi
 
 # Exporting RUST_SRC_PATH
-export RUST_SRC_PATH="$HOME/.rsvm/current/src/rustc-nightly-src/src"
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 if dot13_installed_or_mark 'rust-rustup'; then
   curl https://sh.rustup.rs -sSf | sh
+  rustup component add rust-src
+  rustup toolchain add nightly
+  rustup component add rust-src
 fi
 
 # Add Carbo bin executables to $PATH
