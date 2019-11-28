@@ -1,12 +1,5 @@
 #!/bin/bash
 
-# RSVM - Rust version manager
-export RSVM_DIR="$HOME/.rsvm"
-if [ ! -d "$RSVM_DIR" ]; then
-  echo 'Installing Rust Version manager'
-  curl -L https://raw.github.com/sdepold/rsvm/master/install.sh | sh
-fi
-
 # Exporting RUST_SRC_PATH
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
