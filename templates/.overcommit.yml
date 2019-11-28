@@ -85,9 +85,9 @@ CommitMsg:
   MessageFormat:
     enabled: true
     description: 'Check commit message matches expected pattern'
-    pattern: '(.+)[:] [add|update|remove|delete|set] (.+)'
-    expected_pattern_message: '<Context>: [add|update|remove|delete|set] <Commit Message Description>'
-    sample_message: 'DEFECT-1234 | Refactored Onboarding flow'
+    pattern: '(.+)[:] [add|update|remove|delete|fix|create|bump|build|doc|set|implement](.+)'
+    expected_pattern_message: '<context>: [add|update|remove|delete|fix|create|bump|build|doc|set|implement] <commit message description>'
+    sample_message: 'project: set refactored onboarding flow'
 
   RussianNovel:
     enabled: true
@@ -174,7 +174,7 @@ PreCommit:
       - '*.gemspec'
 
   BundleOutdated:
-    enabled: true
+    enabled: false
     description: 'List installed gems with newer versions available'
     required_executable: 'bundle'
     flags: ['outdated', '--strict', '--parseable']
@@ -223,7 +223,7 @@ PreCommit:
     include: *chamber_settings_files
 
   CodeSpellCheck:
-    enabled: true
+    enabled: false
     description: 'Check if all your code is spell-checked correctly'
     command: 'alfonsox'
     install_command: 'gem install alfonsox'
@@ -240,7 +240,7 @@ PreCommit:
     include: '**/*.coffee'
 
   CookStyle:
-    enabled: true
+    enabled: false
     description: 'Analyze with CookStyle'
     required_executable: 'cookstyle'
     flags: ['--format=emacs', '--force-exclusion', '--display-cop-names']
@@ -276,7 +276,7 @@ PreCommit:
       - '**/*.exs'
 
   EsLint:
-    enabled: true
+    enabled: false
     description: 'Analyze with ESLint'
     required_executable: 'eslint'
     flags: ['--format=compact']
@@ -426,7 +426,7 @@ PreCommit:
     include: '**/*.html'
 
   ImageOptim:
-    enabled: true
+    enabled: false
     description: 'Check for optimizable images'
     required_executable: 'image_optim'
     install_command: 'gem install image_optim'
@@ -445,7 +445,7 @@ PreCommit:
     include: '**/*.java'
 
   Jscs:
-    enabled: true
+    enabled: false
     description: 'Analyze with JSCS'
     required_executable: 'jscs'
     flags: ['--reporter=inline']
@@ -461,7 +461,7 @@ PreCommit:
     include: '**/*.js'
 
   JsLint:
-    enabled: true
+    enabled: false
     description: 'Analyze with JSLint'
     required_executable: 'jslint'
     flags: ['--terse']
@@ -469,7 +469,7 @@ PreCommit:
     include: '**/*.js'
 
   Jsl:
-    enabled: true
+    enabled: false
     description: 'Analyze with JSL'
     required_executable: 'jsl'
     flags: ['-nologo', '-nofilelisting', '-nocontext', '-nosummary']
@@ -643,7 +643,7 @@ PreCommit:
       - 'db/structure.sql'
 
   Reek:
-    enabled: true
+    enabled: false
     description: 'Analyze with Reek'
     required_executable: 'reek'
     flags: ['--single-line', '--no-color', '--force-exclusion']
@@ -677,7 +677,7 @@ PreCommit:
       - '**/Rakefile'
 
   RubyLint:
-    enabled: true
+    enabled: false
     description: 'Analyze with ruby-lint'
     required_executable: 'ruby-lint'
     flags: ['--presenter=syntastic', '--levels=error,warning']
@@ -722,7 +722,7 @@ PreCommit:
     include: '**/*.scss'
 
   SemiStandard:
-    enabled: true
+    enabled: false
     description: 'Analyze with semistandard'
     required_executable: 'semistandard'
     flags: ['--verbose']
@@ -751,7 +751,7 @@ PreCommit:
     include: '**/*.sql'
 
   Standard:
-    enabled: true
+    enabled: false
     description: 'Analyze with standard'
     required_executable: 'standard'
     flags: ['--verbose']
@@ -876,9 +876,14 @@ PreCommit:
     include:
       - '**/*.yaml'
       - '**/*.yml'
+    exclude:
+      - '**/.kitchen.yaml'
+      - '**/.kitchen.yml'
+      - '.kitchen.yaml'
+      - '.kitchen.yml'
 
   YardCoverage:
-    enabled: true
+    enabled: false
     description: 'Checking for yard coverage'
     command: ['yard', 'stats', '--list-undoc', '--compact']
     flags: ['--private', '--protected']
