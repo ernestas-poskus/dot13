@@ -11,5 +11,5 @@ curl -L https://raw.githubusercontent.com/ernestas-poskus/dot13/master/install |
 
 - **shell**: bash
 - **os**: linux
-- **dot**: agignore, bashrc, curlrc, gdbinit, gemrc, gitattributes, gitconfig, gitignore, nanorc, taskrc, tmux.conf, wakatime.cfg, wgetrc
+- **dot**: agignore, bashrc, curlrc, gdbinit, gemrc, gitattributes, gitconfig, gitignore, nanorc, taskrc, tmux.conf, wgetrc
 - **functions**: backup, cron_help, curl, docker, git kernel, random_password, rust, server, wget
