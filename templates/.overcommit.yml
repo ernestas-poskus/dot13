@@ -157,7 +157,7 @@ PreCommit:
     quiet: true
 
   BundleAudit:
-    enabled: true
+    enabled: false
     description: 'Check for vulnerable versions of gems'
     required_executable: 'bundle-audit'
     install_command: 'gem install bundler-audit'
@@ -308,7 +308,7 @@ PreCommit:
     size_limit_bytes: 1_000_000
 
   Flay:
-    enabled: true
+    enabled: false
     description: 'Analyze ruby code for structural similarities with Flay'
     required_executable: 'flay'
     install_command: 'gem install flay'
