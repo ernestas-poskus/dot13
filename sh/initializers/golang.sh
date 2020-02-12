@@ -39,4 +39,5 @@ if [ -d "$GOPATH" ]; then
   mkdir -p "$GOBIN"
   export GOPATH=$GOPATH
   export PATH="$GOBIN:$PATH"
+  export GO111MODULE=on
 fi
