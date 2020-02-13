@@ -14,3 +14,5 @@ vendor/bundle
 .overcommit.yml
 .rgignore
 /target
+go.mod
+go.sum
