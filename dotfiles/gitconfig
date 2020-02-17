@@ -58,7 +58,7 @@
   p = push
   s = show
   sf = show --format=full
-  l = log --graph --all --color --pretty=format:\"%x1b[31m%h%x1b[32m%d%x1b[0m%x20%s\" -16
+  l = log --no-merges --compact-summary
   c = commit
   bl = log -p -M --follow --stat --
 
