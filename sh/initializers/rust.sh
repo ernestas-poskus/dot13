@@ -97,4 +97,12 @@ if which rustc > /dev/null; then
    if dot13_installed_or_mark 'rust-bat'; then
      cargo install --git https://github.com/sharkdp/bat --force
    fi
+
+  if dot13_installed_or_mark 'rust-skim'; then
+    cargo install skim
+  fi
+
+  if dot13_installed_or_mark 'rust-bottom'; then
+    cargo install bottom
+  fi
 fi
