@@ -5,9 +5,9 @@ export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 if dot13_installed_or_mark 'rust-rustup'; then
   curl https://sh.rustup.rs -sSf | sh
-  rustup component add rust-src
   rustup toolchain add nightly
   rustup component add rust-src
+  rustup component add rustfmt
 fi
 
 # Add Carbo bin executables to $PATH
@@ -21,7 +21,7 @@ if which rustc > /dev/null; then
   fi
 
   if dot13_installed_or_mark 'rust-rustfmt'; then
-    cargo install --git https://github.com/rust-lang/rustfmt --force
+    cargo install --bin rustfmt-bin --git https://github.com/rust-lang/rustfmt --force
   fi
 
   if dot13_installed_or_mark 'rust-diesel_cli'; then
