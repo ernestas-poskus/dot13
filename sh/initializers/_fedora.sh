@@ -15,3 +15,15 @@ fi
 if dot13_installed_or_mark 'fedora-fd-find'; then
   sudo dnf install fd-find
 fi
+
+if dot13_installed_or_mark 'build-autoconf'; then
+  sudo dnf install autoconf
+fi
+
+if dot13_installed_or_mark 'build-cmake'; then
+  sudo dnf install cmake
+fi
+
+if dot13_installed_or_mark 'mysql-devel'; then
+  sudo dnf install mysql-devel
+fi
