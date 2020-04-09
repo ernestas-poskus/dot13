@@ -4,3 +4,5 @@ if ! which docker > /dev/null; then
   curl -sSL https://get.docker.com/ | sh
   sudo usermod -aG docker $(whoami)
 fi
+
+export DOCKER_BUILDKIT=1
