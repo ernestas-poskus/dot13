@@ -1,2 +1,6 @@
 # Remove protected packages
 dnf --setopt=protected_packages= remove $(dnf repoquery --duplicated --latest-limit=-1 -q)
+
+# Dockers cgroups2
+yum install -y grubby
+grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
