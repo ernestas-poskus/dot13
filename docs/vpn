@@ -1,0 +1,2 @@
+# Openvpn
+nmcli connection import type openvpn file ~/myconfig.ovpn
