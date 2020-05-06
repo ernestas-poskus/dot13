@@ -28,3 +28,7 @@ fi
 if dot13_installed_or_mark 'npm-js-hint'; then
   npm install -g jshint
 fi
+
+if dot13_installed_or_mark 'npm-typescrpit'; then
+  npm install -g tslint typescript
+fi
