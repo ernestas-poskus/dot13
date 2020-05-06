@@ -117,4 +117,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-analyzer'; then
     cargo install --bins rust-analyzer --git https://github.com/rust-analyzer/rust-analyzer --force
   fi
+
+  if dot13_installed_or_mark 'rust-bat'; then
+    cargo install bat
+  fi
 fi
