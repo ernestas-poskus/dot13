@@ -3,11 +3,15 @@
 # Exporting RUST_SRC_PATH
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
+RUSTC_WRAPPER="sccache"
+
 if dot13_installed_or_mark 'rust-rustup'; then
   curl https://sh.rustup.rs -sSf | sh
   rustup toolchain add nightly
   rustup component add rust-src
   rustup component add rustfmt
+  rustup component add clippy --toolchain nightly-x86_64-unknown-linux-gnu
+  rustup component add rls rust-analysis rust-src
 fi
 
 # Add Carbo bin executables to $PATH
@@ -21,7 +25,7 @@ if which rustc > /dev/null; then
   fi
 
   if dot13_installed_or_mark 'rust-rustfmt'; then
-    cargo install --bin rustfmt-bin --git https://github.com/rust-lang/rustfmt --force
+    cargo install --bins rustfmt-bin --git https://github.com/rust-lang/rustfmt --force
   fi
 
   if dot13_installed_or_mark 'rust-diesel_cli'; then
@@ -104,5 +108,13 @@ if which rustc > /dev/null; then
 
   if dot13_installed_or_mark 'rust-bottom'; then
     cargo install bottom
+  fi
+
+  if dot13_installed_or_mark 'rust-sccache'; then
+    cargo install sccache
+  fi
+
+  if dot13_installed_or_mark 'rust-analyzer'; then
+    cargo install --bins rust-analyzer --git https://github.com/rust-analyzer/rust-analyzer --force
   fi
 fi
