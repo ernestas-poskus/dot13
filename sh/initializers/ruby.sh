@@ -57,4 +57,8 @@ if which ruby > /dev/null; then
   if dot13_installed_or_mark 'ruby-overcommit'; then
     gem install overcommit
   fi
+
+  if dot13_installed_or_mark 'ruby-mdl'; then
+    gem install mdl
+  fi
 fi
