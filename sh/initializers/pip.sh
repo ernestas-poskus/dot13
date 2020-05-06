@@ -1,7 +1,7 @@
 if which pip &> /dev/null; then
   # Cassandra console
   if dot13_installed_or_mark 'pip-cqlsh'; then
-    pip install cqlsh --user
+    pip2 install cqlsh --user
   fi
 
   if dot13_installed_or_mark 'pip-ansible-lint'; then
