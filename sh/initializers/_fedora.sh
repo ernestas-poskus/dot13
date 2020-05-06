@@ -25,5 +25,5 @@ if dot13_installed_or_mark 'build-cmake'; then
 fi
 
 if dot13_installed_or_mark 'mysql-devel'; then
-  sudo dnf install mysql-devel
+  sudo dnf install mysql-devel mysql
 fi
