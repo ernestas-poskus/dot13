@@ -20,3 +20,7 @@ if dot13_installed_or_mark 'npm-plugin-vue'; then
   npm i -g vue-language-server
   npm -i -g vls
 fi
+
+if dot13_installed_or_mark 'npm-git-guilt'; then
+  npm install -g git-guilt
+fi
