@@ -24,3 +24,7 @@ fi
 if dot13_installed_or_mark 'npm-git-guilt'; then
   npm install -g git-guilt
 fi
+
+if dot13_installed_or_mark 'npm-js-hint'; then
+  npm install -g jshint
+fi
