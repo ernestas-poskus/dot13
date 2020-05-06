@@ -27,3 +27,11 @@ fi
 if dot13_installed_or_mark 'mysql-devel'; then
   sudo dnf install mysql-devel mysql
 fi
+
+if dot13_installed_or_mark 'fedora-opnessl-zlib'; then
+  sudo dnf install -y openssl-devel zlib-devel
+fi
+
+if dot13_installed_or_mark 'fedora-llvm'; then
+  sudo dnf install -y llvm llvm-devel
+fi
