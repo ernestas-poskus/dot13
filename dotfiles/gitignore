@@ -16,3 +16,4 @@ vendor/bundle
 /target
 go.mod
 go.sum
+target/
