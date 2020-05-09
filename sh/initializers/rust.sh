@@ -3,8 +3,6 @@
 # Exporting RUST_SRC_PATH
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
-RUSTC_WRAPPER="sccache"
-
 if dot13_installed_or_mark 'rust-rustup'; then
   curl https://sh.rustup.rs -sSf | sh
   rustup toolchain add nightly
@@ -20,6 +18,12 @@ if [ -d "$HOME/.cargo" ]; then
 fi
 
 if which rustc > /dev/null; then
+  if dot13_installed_or_mark 'rust-sccache'; then
+    cargo install sccache
+  fi
+
+  export RUSTC_WRAPPER="sccache"
+
   if dot13_installed_or_mark 'rust-racer'; then
     cargo install -f racer
   fi
@@ -110,15 +114,15 @@ if which rustc > /dev/null; then
     cargo install bottom
   fi
 
-  if dot13_installed_or_mark 'rust-sccache'; then
-    cargo install sccache
-  fi
-
   if dot13_installed_or_mark 'rust-analyzer'; then
     cargo install --bins rust-analyzer --git https://github.com/rust-analyzer/rust-analyzer --force
   fi
 
   if dot13_installed_or_mark 'rust-bat'; then
     cargo install bat
+  fi
+
+  if dot13_installed_or_mark 'rust-navi'; then
+    cargo install navi
   fi
 fi
