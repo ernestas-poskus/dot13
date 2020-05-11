@@ -125,4 +125,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-navi'; then
     cargo install navi
   fi
+
+  if dot13_installed_or_mark 'rust-loc'; then
+    cargo install loc
+  fi
 fi
