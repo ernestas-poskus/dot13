@@ -129,4 +129,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-loc'; then
     cargo install loc
   fi
+
+  if dot13_installed_or_mark 'rust-wrangler'; then
+    cargo install wrangler
+  fi
 fi
