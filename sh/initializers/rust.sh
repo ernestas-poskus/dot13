@@ -10,6 +10,7 @@ if dot13_installed_or_mark 'rust-rustup'; then
   rustup component add rustfmt
   rustup component add clippy --toolchain nightly-x86_64-unknown-linux-gnu
   rustup component add rls rust-analysis rust-src
+  rustup target add x86_64-unknown-linux-musl
 fi
 
 # Add Carbo bin executables to $PATH
@@ -132,5 +133,9 @@ if which rustc > /dev/null; then
 
   if dot13_installed_or_mark 'rust-wrangler'; then
     cargo install wrangler
+  fi
+
+  if dot13_installed_or_mark 'rust-mcfly'; then
+    cargo install mcfly
   fi
 fi
