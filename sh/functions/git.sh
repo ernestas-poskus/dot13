@@ -39,3 +39,7 @@ function check_overcommit() {
     fi
   fi
 }
+
+function am() {
+  OVERCOMMIT_DISABLE=1 git amend
+}
