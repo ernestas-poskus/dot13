@@ -12,7 +12,7 @@ function gpu() {
 }
 
 function gignore() {
-  touch .gitignore && curl -L -s "https://www.gitignore.io/api/$@" >> .gitignore
+  touch .gitignore && curl -L -s "https://www.gitignore.io/api/$*" >> .gitignore
 }
 
 function git_current_branch() {
