@@ -1,0 +1,10 @@
+#!/bin/bash
+
+year="{$1:-2019}"
+limit="${2:-5}"
+
+months=(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec)
+for m in "${months[@]}"; do
+  echo $m
+  git log --no-merges --dirstat=lines --since "$year $m" --name-only --format="" | awk -F '/' '{print $1}' | sort | uniq -c | sort -nk1 | tail -n "$limit"
+done
