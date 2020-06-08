@@ -5,7 +5,7 @@ function ct() {
     echo 'Test file found, running..'
     ./test "$@"
   else
-    cargo test --all-features -- --nocapture $@
+    cargo test --jobs 32 --all-features -- --nocapture $@
   fi
 }
 
