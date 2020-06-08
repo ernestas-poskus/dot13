@@ -380,7 +380,7 @@ PreCommit:
     include: '**/*.go'
 
   Hadolint:
-    enabled: true
+    enabled: false
     description: 'Analyze with hadolint'
     required_executable: 'hadolint'
     include:
