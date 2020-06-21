@@ -11,6 +11,7 @@ if dot13_installed_or_mark 'rust-rustup'; then
   rustup component add clippy --toolchain nightly-x86_64-unknown-linux-gnu
   rustup component add rls rust-analysis rust-src
   rustup target add x86_64-unknown-linux-musl
+  rustup component add miri
 fi
 
 # Add Carbo bin executables to $PATH
