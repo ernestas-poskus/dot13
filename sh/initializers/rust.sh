@@ -139,4 +139,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-mcfly'; then
     cargo install mcfly
   fi
+
+  if dot13_installed_or_mark 'rust-sd'; then
+    cargo install sd
+  fi
 fi
