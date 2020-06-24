@@ -143,4 +143,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-sd'; then
     cargo install sd
   fi
+
+  if dot13_installed_or_mark 'rust-cargo-udeps'; then
+    cargo install cargo-udeps
+  fi
 fi
