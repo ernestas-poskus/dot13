@@ -17,3 +17,7 @@ function cu() {
 function cargo_clean() {
   find . -name 'Cargo.toml' -execdir cargo clean \;
 }
+
+function cb() {
+  cargo bench --all-features -- --nocapture $@
+}
