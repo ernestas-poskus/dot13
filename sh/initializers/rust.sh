@@ -147,4 +147,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-cargo-udeps'; then
     cargo install cargo-udeps
   fi
+
+  if dot13_installed_or_mark 'rust-cargo-expand'; then
+    cargo install cargo-expand
+  fi
 fi
