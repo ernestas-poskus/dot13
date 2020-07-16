@@ -35,3 +35,8 @@ fi
 if dot13_installed_or_mark 'fedora-llvm'; then
   sudo dnf install -y llvm llvm-devel
 fi
+
+if dot13_installed_or_mark 'fedora-tlp'; then
+  sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm
+  sudo dnf install tlp tlp-rdw akmod-tp_smapi akmod-acpi_call smartmontools
+fi
