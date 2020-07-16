@@ -151,4 +151,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-cargo-expand'; then
     cargo install cargo-expand
   fi
+
+  if dot13_installed_or_mark 'rust-cargo-cache'; then
+    cargo install cargo-cache
+  fi
 fi
