@@ -85,8 +85,8 @@ CommitMsg:
   MessageFormat:
     enabled: true
     description: 'Check commit message matches expected pattern'
-    pattern: '(.+)[:] [add|update|remove|delete|fix|create|bump|build|doc|set|implement](.+)'
-    expected_pattern_message: '<context>: [add|update|remove|delete|fix|create|bump|build|doc|set|implement] <commit message description>'
+    pattern: '(.+)[:] [add|update|remove|delete|fix|create|bump|build|doc|set|implement|join|refactor](.+)'
+    expected_pattern_message: '<context>: [add|update|remove|delete|fix|create|bump|build|doc|set|implement|join|refactor] <commit message description>'
     sample_message: 'project: set refactored onboarding flow'
 
   RussianNovel:
