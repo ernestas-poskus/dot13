@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Exporting RUST_SRC_PATH
-export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
-
 if dot13_installed_or_mark 'rust-rustup'; then
   curl https://sh.rustup.rs -sSf | sh
   rustup toolchain add nightly
@@ -18,6 +15,9 @@ fi
 if [ -d "$HOME/.cargo" ]; then
   export PATH="$HOME/.cargo/bin:$PATH"
 fi
+
+# Exporting RUST_SRC_PATH
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-sccache'; then
