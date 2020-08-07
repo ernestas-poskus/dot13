@@ -47,11 +47,6 @@ if which rustc > /dev/null; then
     cargo install cargo-edit
   fi
 
-  if dot13_installed_or_mark 'rust-bins'; then
-    sudo dnf install file-devel
-    cargo install bins
-  fi
-
   if dot13_installed_or_mark 'cargo-watch'; then
     cargo install cargo-watch
   fi
@@ -154,5 +149,9 @@ if which rustc > /dev/null; then
 
   if dot13_installed_or_mark 'rust-cargo-cache'; then
     cargo install cargo-cache
+  fi
+
+  if dot13_installed_or_mark 'rust-gist-rs'; then
+    cargo install gist-rs
   fi
 fi
