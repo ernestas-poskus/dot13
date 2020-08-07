@@ -8,7 +8,7 @@ if dot13_installed_or_mark 'rust-rustup'; then
   rustup toolchain add nightly
   rustup component add rust-src
   rustup component add rustfmt
-  rustup component add clippy --toolchain nightly-x86_64-unknown-linux-gnu
+  rustup component add clippy
   rustup component add rls rust-analysis rust-src
   rustup target add x86_64-unknown-linux-musl
   rustup component add miri
@@ -28,10 +28,6 @@ if which rustc > /dev/null; then
 
   if dot13_installed_or_mark 'rust-racer'; then
     cargo install -f racer
-  fi
-
-  if dot13_installed_or_mark 'rust-rustfmt'; then
-    cargo install --bins rustfmt-bin --git https://github.com/rust-lang/rustfmt --force
   fi
 
   if dot13_installed_or_mark 'rust-diesel_cli'; then
@@ -109,10 +105,6 @@ if which rustc > /dev/null; then
 
   if dot13_installed_or_mark 'rust-bottom'; then
     cargo install bottom
-  fi
-
-  if dot13_installed_or_mark 'rust-analyzer'; then
-    cargo install --bins rust-analyzer --git https://github.com/rust-analyzer/rust-analyzer --force
   fi
 
   if dot13_installed_or_mark 'rust-bat'; then
