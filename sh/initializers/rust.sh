@@ -146,4 +146,8 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-gist-rs'; then
     cargo install gist-rs
   fi
+
+  if dot13_installed_or_mark 'rust-rust_scan'; then
+    cargo install rust_scan
+  fi
 fi
