@@ -150,4 +150,20 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-rust_scan'; then
     cargo install rust_scan
   fi
+
+  if dot13_installed_or_mark 'rust-outdated'; then
+    cargo install cargo-outdated
+  fi
+
+  if dot13_installed_or_mark 'rust-audit'; then
+    cargo install cargo-audit --features=fix
+  fi
+
+  if dot13_installed_or_mark 'rust-cargo-aws-lambda'; then
+    cargo install cargo-aws-lambda
+  fi
+fi
+
+if which rustup > /dev/null; then
+  source <(rustup completions bash)
 fi
