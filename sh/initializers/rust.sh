@@ -162,6 +162,10 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-cargo-aws-lambda'; then
     cargo install cargo-aws-lambda
   fi
+
+  if dot13_installed_or_mark 'rust-cargo-release'; then
+    cargo install cargo-release
+  fi
 fi
 
 if which rustup > /dev/null; then
