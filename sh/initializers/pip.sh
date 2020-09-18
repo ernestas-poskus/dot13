@@ -16,4 +16,8 @@ if which pip &> /dev/null; then
     sudo dnf install redhat-rpm-config python-devel postgresql-devel
     pip install pgcli --user
   fi
+
+  if dot13_installed_or_mark 'pip-yq'; then
+    pip install yq --user
+  fi
 fi
