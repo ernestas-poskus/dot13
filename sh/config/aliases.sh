@@ -18,6 +18,7 @@ alias g='git'
 alias c='cargo'
 alias ff='goreman -b 3000 start'
 alias nn='npm run dev'
+alias s='git sf'
 
 # Chef
 alias ki='bundle exec kitchen'
