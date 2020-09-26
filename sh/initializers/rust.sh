@@ -32,7 +32,7 @@ if which rustc > /dev/null; then
 
   if dot13_installed_or_mark 'rust-diesel_cli'; then
     sudo yum install libpq-devel
-    cargo install -f diesel_cli --no-default-features --features mysql
+    cargo install -f diesel_cli --no-default-features --features postgres
   fi
 
   if dot13_installed_or_mark 'cargo-update'; then
