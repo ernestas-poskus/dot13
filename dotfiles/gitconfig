@@ -61,6 +61,7 @@
   l = log --no-merges --compact-summary
   c = commit
   bl = log -p -M --follow --stat --
+  pt = push --tags
 
 [branch]
   autosetupmerge = always
