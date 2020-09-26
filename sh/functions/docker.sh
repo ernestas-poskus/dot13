@@ -43,7 +43,7 @@ function docker_kibana() {
 }
 
 function docker_here() {
-  docker run --rm -it -v $(pwd):/source $1
+  docker run --rm -it -v $(pwd):/source $*
 }
 
 function docker_mail() {
