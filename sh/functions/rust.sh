@@ -1,12 +1,11 @@
 #!/bin/bash
 
 function ct() {
-  if [ -f 'test' ]; then
-    echo 'Test file found, running..'
-    ./test "$@"
-  else
-    cargo test --jobs 32 --all-features -- --nocapture $@
-  fi
+  cargo test --jobs 32 --all-features -- --nocapture "$@"
+}
+
+function ct1() {
+  cargo test --jobs 1 --all-features -- --nocapture "$@"
 }
 
 function cu() {
@@ -19,5 +18,5 @@ function cargo_clean() {
 }
 
 function cb() {
-  cargo bench --all-features -- --nocapture $@
+  cargo bench --all-features -- --nocapture "$@"
 }
