@@ -886,7 +886,7 @@ PreCommit:
       - '/**/*.rb'
 
   YarnCheck:
-    enabled: true
+    enabled: false
     description: 'Check yarn.lock dependencies'
     required_executable: 'yarn'
     flags: ['check', '--silent', '--no-progress', '--non-interactive']
