@@ -81,6 +81,9 @@ CommitMsg:
   HardTabs:
     enabled: true
     description: 'Check for hard tabs'
+    exclude:
+      - '*.mk'
+      - '**/*.mk'
 
   MessageFormat:
     enabled: true
@@ -403,6 +406,8 @@ PreCommit:
     exclude:
       - '**/Makefile'
       - '**/*.go'
+      - '*.mk'
+      - '**/*.mk'
 
   Hlint:
     enabled: true
