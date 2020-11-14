@@ -92,19 +92,15 @@ if which rustc > /dev/null; then
   fi
 
   if dot13_installed_or_mark 'rust-zola'; then
-    cargo install --git https://github.com/getzola/zola --force
+    cargo install zola
   fi
 
    if dot13_installed_or_mark 'rust-bat'; then
-     cargo install --git https://github.com/sharkdp/bat --force
+     cargo install bat
    fi
 
   if dot13_installed_or_mark 'rust-skim'; then
     cargo install skim
-  fi
-
-  if dot13_installed_or_mark 'rust-bottom'; then
-    cargo install bottom
   fi
 
   if dot13_installed_or_mark 'rust-bat'; then
@@ -165,6 +161,10 @@ if which rustc > /dev/null; then
 
   if dot13_installed_or_mark 'rust-cargo-release'; then
     cargo install cargo-release
+  fi
+
+  if dot13_installed_or_mark 'rust-cargo-bloat'; then
+    cargo install cargo-bloat
   fi
 fi
 
