@@ -43,3 +43,7 @@ function check_overcommit() {
 function am() {
   OVERCOMMIT_DISABLE=1 git amend
 }
+
+function aa() {
+  git add --all
+}
