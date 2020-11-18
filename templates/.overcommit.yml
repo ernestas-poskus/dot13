@@ -794,14 +794,6 @@ PreCommit:
     required_executable: 'grep'
     flags: ['-IHn', "[ \t]$"]
 
-  TravisLint:
-    enabled: true
-    description: 'Check Travis CI configuration'
-    required_executable: 'travis'
-    flags: ['lint']
-    install_command: 'gem install travis'
-    include: '.travis.yml'
-
   Vint:
     enabled: true
     description: 'Analyze with Vint'
