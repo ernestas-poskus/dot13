@@ -47,3 +47,7 @@ function am() {
 function aa() {
   git add --all
 }
+
+function pop() {
+  git stash pop
+}
