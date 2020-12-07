@@ -37,8 +37,8 @@ esac
 HISTCONTROL=ignoreboth
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=10000
-HISTFILESIZE=20000
+HISTSIZE=100000
+HISTFILESIZE=200000
 
 # Load all functions
 for config_file in $HOME/dot13/sh/functions/*; do
@@ -54,3 +54,6 @@ done
 for config_file in $HOME/dot13/sh/initializers/*; do
   source $config_file
 done
+
+# added by travis gem
+[ ! -s /home/ow/.travis/travis.sh ] || source /home/ow/.travis/travis.sh
