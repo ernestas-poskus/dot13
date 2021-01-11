@@ -1012,7 +1012,7 @@ PostCommit:
     recursive: false
 
   YarnInstall:
-    enabled: true
+    enabled: false
     description: 'Install Yarn dependencies'
     requires_files: true
     required_executable: 'yarn'
