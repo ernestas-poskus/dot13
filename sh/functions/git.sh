@@ -16,7 +16,6 @@ function gignore() {
 }
 
 function git_current_branch() {
-  check_overcommit
   if [ -d '.git' ]; then git rev-parse --abbrev-ref HEAD; fi
 }
 
@@ -26,18 +25,6 @@ function update_upstream() {
 
 function update_upstream_master() {
   git checkout master && update_upstream && git checkout -
-}
-
-function check_overcommit() {
-  if [ -d ".git" ]; then
-    template="$DOT13_PATH/templates/.overcommit.yml"
-    if [ ! -L ".overcommit.yml" -a ! -f ".overcommit.yml" ]; then
-      echo 'Installing .overcommit.yml'
-      ln -sf "$template" "$(pwd)/.overcommit.yml"
-      overcommit --install
-      overcommit --sign
-    fi
-  fi
 }
 
 function am() {
