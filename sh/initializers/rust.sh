@@ -166,6 +166,10 @@ if which rustc > /dev/null; then
   if dot13_installed_or_mark 'rust-cargo-bloat'; then
     cargo install cargo-bloat
   fi
+
+  if dot13_installed_or_mark 'rust-systemd-watch'; then
+    cargo install systemfd cargo-watch
+  fi
 fi
 
 if which rustup > /dev/null; then
