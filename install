@@ -1,16 +1,22 @@
 #!/bin/bash
 
-if [ ! -d "$HOME/dot13" ]; then
+DOT13_HOME="$HOME/dot13"
+
+if [ ! -d "$DOT13_HOME" ]; then
     echo "Installing dot13"
     git clone https://github.com/ernestas-poskus/dot13.git "$HOME/dot13"
 fi
 
 echo "Linking dotfiles"
 
+
 # Dot files
-for f in $HOME/dot13/dotfiles/*; do
+for f in $DOT13_HOME/dotfiles/*; do
   if [ -f $f ]; then
     echo "ln -sf $f $HOME/.$(basename $f)"
     ln -sf $f "$HOME/.$(basename $f)"
   fi
 done
+
+# Templates
+ln -sf "$DOT13_HOME/templates/config.toml" "$HOME/.cargo/config.toml"

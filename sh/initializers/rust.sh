@@ -11,10 +11,9 @@ if dot13_installed_or_mark 'rust-rustup'; then
   rustup component add miri
 fi
 
+mkdir -p "$HOME/.cargo" &> /dev/null
 # Add Carbo bin executables to $PATH
-if [ -d "$HOME/.cargo" ]; then
-  export PATH="$HOME/.cargo/bin:$PATH"
-fi
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Exporting RUST_SRC_PATH
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
